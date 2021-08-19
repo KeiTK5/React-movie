@@ -1,0 +1,37 @@
+.blog-item {
+    display: flex;
+    height: 90px;
+    cursor: pointer;
+}
+
+.blog-item:hover .blog-item-image {
+    opacity: 0.7;
+}
+
+.blog-item-image {
+    position: relative;
+    width: 160px;
+    transition: 0.3s ease;
+}
+.blog-mg {
+    margin: 10px 0;
+}
+
+.blog-item-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+}
+.content {
+    color: white;
+    flex: 1;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 25px;
+    -webkit-line-clamp: 3;
+    height: 75px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}

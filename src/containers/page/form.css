@@ -1,0 +1,118 @@
+.form {
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    width: 300px;
+    border: 1px solid white;
+    z-index: 11111;
+    background: rgba(0, 0, 0, 0.9);
+    height: 60vh;
+    transition: 0.4s ease-in-out;
+    opacity: 0;
+}
+.form.active {
+    opacity: 1;
+    right: 0;
+}
+.welcome {
+    color: white;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+.icon-x {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.main-form {
+    margin-top: 20px;
+    display: flex;
+    margin-left: 15px;
+}
+
+.login {
+    cursor: pointer;
+    padding: 5px 15px;
+    font-weight: 500;
+    color: white;
+}
+
+.login.active {
+    border-bottom: 2px solid var(--main-color);
+}
+
+.form-mg {
+    margin-top: 30px;
+}
+.form-lock {
+    margin-top: 15px;
+    margin-left: 30px;
+    position: relative;
+}
+.user-name-input {
+    color: white;
+    font-size: 0.9rem;
+}
+.input {
+    display: flex;
+}
+
+.txt {
+    border: #dbdbdb 1px solid;
+    border-radius: 4px;
+    outline: none;
+    margin-top: 5px;
+    padding: 3px 5px;
+    width: 95%;
+}
+
+.txt:focus {
+    background: #c8fbffcc;
+    border: 1px solid var(--main-color);
+}
+
+.icon-lock {
+    position: absolute;
+    bottom: 3px;
+    left: 5px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+}
+.check {
+    margin-left: 5px;
+    color: white;
+    font-size: 0.8rem;
+}
+.form-forget {
+    display: flex;
+}
+
+.forget-pass {
+    cursor: pointer;
+    margin-left: 60px;
+    color: #dbdbdb;
+    font-size: 0.8rem;
+}
+
+.submit {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-submit {
+    padding: 5px 30px;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    color: white;
+}
+.btn-submit:hover {
+    background: var(--main-color);
+}

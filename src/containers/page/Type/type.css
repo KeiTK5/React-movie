@@ -1,0 +1,9 @@
+.type-item {
+    height: 150px;
+    overflow: hidden;
+}
+
+.type-item > img {
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,18 @@
+.ske-wrapper-type {
+    height: 150px;
+    background: #444;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+.ske-wrapper-type::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    animation: loading-detail 1.5s infinite;
+}

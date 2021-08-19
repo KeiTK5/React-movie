@@ -1,0 +1,682 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Hello World",
+            "image": "https://upload.wikimedia.org/wikipedia/vi/4/4e/Hello_World_poster.jpg",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, consectetur?",
+            "category": "Anime",
+            "author": "Mado Nozaki",
+            "premiere": "19/9/2020",
+            "time": "120 minutes",
+            "price": "89.000",
+            "language": "Tiếng Nhật - Phụ đề Tiếng Việt"
+        },
+        {
+            "id": 2,
+            "name": "Your Name",
+            "image": "https://raw.githubusercontent.com/trananhtuat/flix-movie-homepage/main/images/cartoons/your-name.jpg",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, consectetur?",
+            "category": "Anime",
+            "author": "Shinkai Makoto",
+            "premiere": "19/9/2020",
+            "time": "120 minutes",
+            "price": "89.000",
+            "language": "Tiếng Nhật - Phụ đề Tiếng Việt"
+        },
+        {
+            "id": 3,
+            "name": "Weathering",
+            "image": "https://raw.githubusercontent.com/trananhtuat/flix-movie-homepage/main/images/cartoons/weathering.jpg",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, consectetur?",
+            "category": "Anime",
+            "author": "Shinkai Makoto",
+            "premiere": "19/9/2020",
+            "time": "120 minutes",
+            "price": "89.000",
+            "language": "Tiếng Nhật - Phụ đề Tiếng Việt"
+        },
+        {
+            "id": 4,
+            "name": "Josee",
+            "image": "https://www.fullphimz.net/static/5fe2d564b3fa6403ffa11d1c/60cf650927fc177124d75d7c_josee-khi-nang-tho-yeu.jpg",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, consectetur?",
+            "category": "Anime",
+            "author": "Seiko Tanabe",
+            "premiere": "19/9/2020",
+            "time": "120 minutes",
+            "price": "89.000",
+            "language": "Tiếng Nhật - Phụ đề Tiếng Việt"
+        },
+        {
+            "id": 5,
+            "name": "Demon Slayer",
+            "image": "https://raw.githubusercontent.com/trananhtuat/flix-movie-homepage/main/images/cartoons/demon-slayer.jpg",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, consectetur?",
+            "category": "Anime",
+            "author": "Gotouge Koyoharu",
+            "premiere": "19/9/2020",
+            "time": "120 minutes",
+            "price": "89.000",
+            "language": "Tiếng Nhật - Phụ đề Tiếng Việt"
+        },
+        {
+            "id": 6,
+            "name": "Dragon Ball",
+            "image": "https://raw.githubusercontent.com/trananhtuat/flix-movie-homepage/main/images/cartoons/dragon.jpg",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, consectetur?",
+            "category": "Anime",
+            "author": "Toei Animation",
+            "premiere": "19/9/2020",
+            "time": "120 minutes",
+            "price": "79.000",
+            "language": "Tiếng Nhật - Phụ đề Tiếng Việt"
+        },
+        {
+            "id": 7,
+            "name": "A Silent Voice",
+            "image": "https://phimbui.com/static/003/550/dang-hinh-thanh-am.jpg",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, consectetur?",
+            "category": "Anime",
+            "author": "Oima Yoshitoki",
+            "premiere": "19/9/2020",
+            "time": "120 minutes",
+            "price": "69.000",
+            "language": "Tiếng Nhật - Phụ đề Tiếng Việt"
+        },
+        {
+            "id": 8,
+            "name": "Sword Art Online",
+            "image": "https://m.media-amazon.com/images/M/MV5BZGE4M2M2OTYtZDgwMy00NGYwLWE0YTYtYzkyMDFjYWFhN2QzXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, consectetur?",
+            "category": "Anime",
+            "author": "Kawahara Reki",
+            "premiere": "19/9/2020",
+            "time": "120 minutes",
+            "price": "69.000",
+            "language": "Tiếng Nhật - Phụ đề Tiếng Việt"
+        },
+        {
+            "id": 9,
+            "name": "Date A Live",
+            "image": "https://upload.wikimedia.org/wikipedia/en/1/1b/Date_A_Live_Movie_Mayuri_Judgement_Poster.png",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, consectetur?",
+            "category": "Anime",
+            "author": "Koshi Tachibana",
+            "premiere": "19/9/2020",
+            "time": "120 minutes",
+            "price": "89.000",
+            "language": "Tiếng Nhật - Phụ đề Tiếng Việt"
+        },
+        {
+            "id": 10,
+            "name": "Fate Stay Night: Heaven's Feel",
+            "image": "https://img.vncdn.xyz/static/images/1625072052-fate-stay-night-movie-heaven-s-feel-iii-spring-song-f3359.jpg",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, consectetur?",
+            "category": "Anime",
+            "author": "Kondo Hikaru",
+            "premiere": "19/9/2020",
+            "time": "120 minutes",
+            "price": "99.000",
+            "language": "Tiếng Nhật - Phụ đề Tiếng Việt"
+        },
+        {
+            "id": 11,
+            "name": "Nakitai Watashi Wa Neko Wo Kaburu",
+            "image": "https://av.watch.impress.co.jp/img/avw/docs/1231/692/001_s.jpg",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, consectetur?",
+            "category": "Anime",
+            "author": "Okada Mari",
+            "premiere": "19/9/2020",
+            "time": "120 minutes",
+            "price": "105.000",
+            "language": "Tiếng Nhật - Phụ đề Tiếng Việt"
+        },
+        {
+            "id": 12,
+            "name": "Re:Zero",
+            "image": "https://img.vncdn.xyz/uploads/images/1568565674-rezero-kara-hajimeru-isekai-seikatsu-memory-snow.jpg",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, consectetur?",
+            "category": "Anime",
+            "author": "Tappei Nagatsuki",
+            "premiere": "19/9/2020",
+            "time": "120 minutes",
+            "price": "89.000",
+            "language": "Tiếng Nhật - Phụ đề Tiếng Việt"
+        },
+        {
+            "id": 13,
+            "name": "Seirei Gensouki - Spirit Chronicles (2021)",
+            "image": "https://i1.wp.com/vuviphjm.com/wp-content/uploads/2021/04/Seirei-Gensouki-1.jpg",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, consectetur?",
+            "category": "Anime",
+            "author": "Tappei Nagatsuki",
+            "premiere": "19/9/2020",
+            "time": "120 minutes",
+            "price": "87.000",
+            "language": "Tiếng Nhật - Phụ đề Tiếng Việt"
+        },
+        {
+            "id": 14,
+            "category": "Movie",
+            "name": "Bàn tay diệt quỷ",
+            "author": "Kim Joo Hwan",
+            "cast": "Park Seo Joon, Ahn Sung Ki, Woo Do Hwan, Choi Woo Sik…",
+            "premiere": "09/04/2021",
+            "time": "128 minutes",
+            "language": "Tiếng Hàn - Phụ đề tiếng Việt",
+            "price": "97.000",
+            "image": "https://www.cgv.vn/media/catalog/product/cache/1/small_image/190x260/052b7e4a4f6d2886829431e534ef7a43/b/t/btdq_main_poster_1.jpg",
+            "description": "Sau khi bản thân bỗng nhiên sở hữu “Bàn tay diệt quỷ”, võ sĩ MMA Yong Hoo (Park Seo Joon thủ vai) đã dấn thân vào hành trình trừ tà, trục quỷ đối đầu với Giám Mục Bóng Tối (Woo Do Hwan) – tên quỷ Satan đột lốt người. Từ đó sự thật về cái chết của cha Yong Hoo cũng dần được hé lộ cũng như nguyên nhân anh trở thành “người được chọn”."
+        },
+        {
+            "id": 15,
+            "category": "Movie",
+            "name": "Godzilla Vs Kong",
+            "author": "Adam Wingard",
+            "cast": "Millie Bobby Brown, Alexander Skarsgård, Rebecca Hall, Eiza González, Kyle Chandler",
+            "premiere": "26/03/2021",
+            "time": "113 minutes",
+            "language": "Tiếng Anh - Phụ đề Tiếng Việt, Phụ đề Tiếng Hàn - Tiếng Việt",
+            "price": "89.000",
+            "image": "https://www.cgv.vn/media/catalog/product/cache/1/small_image/190x260/052b7e4a4f6d2886829431e534ef7a43/g/o/godzilla_vs_1__1.jpg",
+            "description": "Khi hai kẻ thù truyền kiếp gặp nhau trong một trận chiến ngoạn mục, số phận của cả thế giới vẫn còn bị bỏ ngỏ… Bị đưa khỏi Đảo Đầu Lâu, Kong cùng Jia, một cô bé mồ côi có mối liên kết mạnh mẽ với mình và đội bảo vệ đặc biệt hướng về mái nhà mới. Bất ngờ, nhóm đụng độ phải Godzilla hùng mạnh, tạo ra một làn sóng hủy diệt trên toàn cầu. Thực chất, cuộc chiến giữa hai kẻ khổng lồ dưới sự thao túng của các thế lực vô hình mới chỉ là điểm khởi đầu để khám phá những bí ẩn nằm sâu trong tâm Trái đất."
+        },
+        {
+            "id": 16,
+            "category": "Movie",
+            "name": "Mortal Kombat: Cuộc chiến sinh tử",
+            "author": "Simon McQuoid",
+            "cast": "Lewis Tan, Jessica McNamee, Josh Lawson, Joe Taslim, Tadanobu Asano, Mehcad Brooks",
+            "premiere": "09/04/2021",
+            "time": "113 minutes",
+            "language": "Tiếng Anh - Phụ đề Tiếng Việt",
+            "price": "89.000",
+            "image": "https://www.cgv.vn/media/catalog/product/cache/1/small_image/190x260/052b7e4a4f6d2886829431e534ef7a43/m/o/mortal_kombat_-_vn_-_payoff_poster_1_1__1.jpg",
+            "description": "Mortal Kombat: Cuộc Chiến Sinh Tử xoay quanh võ sĩ võ thuật tổng hợp Cole Young (Lewis Tan), người mang trên mình một vết chàm rồng đen bí ẩn - biểu tượng của Mortal Kombat. Cole Young không hề biết về dòng máu bí ẩn đang chảy trong người anh, hay vì sao anh lại bị tên sát thủ Sub-Zero (Joe Taslim) săn lùng. Vì sự an nguy của gia đình, Cole cùng với một nhóm những chiến binh đã được tuyển chọn để tham gia vào một trận chiến đẫm máu nhằm chống lại những kẻ thù đến từ Outworld."
+        },
+        {
+            "id": 17,
+            "category": "Movie",
+            "name": "Người nhân bản",
+            "author": "Lee Yong Zoo",
+            "cast": "Gong Yoo, Park Bo Gum, Jo Woo Jin, Jang Young Nam, Park Byung Eun",
+            "premiere": "15/04/2021",
+            "time": "113 minutes",
+            "language": "Tiếng Hàn - Phụ đề Tiếng Việt",
+            "price": "99.000",
+            "image": "https://www.cgv.vn/media/catalog/product/cache/1/small_image/190x260/052b7e4a4f6d2886829431e534ef7a43/m/a/main_poster_seobok_15_1.jpg",
+            "description": "Seobok – Người Nhân Bản là câu chuyện về Ki-hun (Gong Yoo) – một cựu đặc vụ sống tách biệt với thế giới bên ngoài kể từ sau biến cố trong quá khứ, chấp nhận thực hiện nhiệm vụ cuối cùng từ Cơ quan Tình báo. Anh phải chịu trách nhiệm di chuyển Seobok (Park Bo Gum), một đối tượng thử nghiệm được tạo ra bằng cách nhân bản tế bào gốc và biến đổi gen. Tuy nhiên mọi việc không hề suôn sẻ với họ, khi Seobok trở thành mục tiêu của các thế lực khác với những tham vọng và âm mưu khó đoán. Ki-hun sẽ vượt qua tất cả những hiểm nguy đang chực chờ phía trước, hay Seobok cuối cùng sẽ rơi vào tay kẻ muốn chiếm đoạt vận mệnh của toàn nhân loại?"
+        },
+        {
+            "id": 18,
+            "category": "Movie",
+            "name": "Ong nhí phiêu lưu kí: Giải cứu công chúa kiến",
+            "author": "Noel Cleary",
+            "cast": "Coco Jack Gillies, Evie Gillies, Benson Jack Anthony, Justine Clarke, Shane Dundas; David Collins",
+            "premiere": "23/04/2021",
+            "time": "88 minutes",
+            "language": "Tiếng Anh - Phụ đề Tiếng Việt; Lồng tiếng",
+            "price": "79.000",
+            "image": "https://www.cgv.vn/media/catalog/product/cache/1/small_image/190x260/052b7e4a4f6d2886829431e534ef7a43/m/a/main_poster_mtb_1__1.jpg",
+            "description": "Quá háo hức chào đón mùa xuân, Maya và Willy đã thức dậy khỏi giấc ngủ đông sớm hơn thời gian dự định. Từ đây, đôi bạn vô tình phải nhận một nhiệm vụ đặc biệt – bảo vệ và đưa quả trứng vàng đến ngôi nhà mới. Tuy nhiên, mọi rắc rối bắt đầu ập đến khi quả trứng nứt và cô công chúa kiến bé nhỏ ra đời. Maya, Willy và những người bạn đồng hành phải phối hợp cùng nhau để chăm sóc và bảo vệ công chúa kiến khỏi vô vàn nguy hiểm xung quanh. Trong hành trình đầy bất ngờ và gian nan này, Willy dần dần khám phá được một khía cạnh khác của bản thân – dịu dàng và kiên nhẫn với cô công chúa nhỏ. Bộ đôi Maya và Willy cũng đã trưởng thành hơn và tình bạn giữa họ càng trở nên thêm khăng khít và gắn bó."
+        },
+        {
+            "id": 19,
+            "category": "Movie",
+            "name": "Cục nợ hóa cục cưng",
+            "author": "Kang Dae Kyu",
+            "cast": "Sung Dong Il, Ha Ji Won, Kim Hiewon, Park Soi",
+            "premiere": "09/10/2020",
+            "time": "113 minutes",
+            "language": "Tiếng Hàn - Phụ đề Tiếng Việt",
+            "price": "89.000",
+            "image": "https://www.cgv.vn/media/catalog/product/cache/1/small_image/190x260/052b7e4a4f6d2886829431e534ef7a43/r/s/rsz_main_poster_cncc_1.jpg",
+            "description": "Du-seok (Sung Dong Il) và Jong-bae (Kim Hiewon) là hai gã chuyên đòi nợ thuê có máu mặt. Để uy hiếp một con nợ, cả hai đã bắt Seung-yi (Park Soi) - một bé gái 9 tuổi làm vật thế chấp cho số nợ của mẹ cô bé. Tuy nhiên, mẹ của Seung-yi lại bị trục xuất về nước, và hai ông chú đành nhận trách nhiệm trông chừng Seung-yi đến khi cô bé được một gia đình giàu có nhận nuôi. Khi phát hiện ra Seung-yi nhỏ bé bị bán đi làm công cho một bà chủ vô trách nhiệm, Du-seok đã tìm đến để chuộc lại cô bé. Mặc dù Seung-yi vốn là 'cục nợ' Du-seok và Jong-bae không hề mong muốn, cô bé dần trở thành cục cưng yêu quý và cả 3 sống bên nhau như một gia đình. (CHIẾU LẠI từ 5/5/21)"
+        },
+        {
+            "id": 20,
+            "category": "Movie",
+            "name": "Thám tử lừng danh Conan: Viên đạn đỏ",
+            "author": "Tomoka Nagaoka",
+            "cast": "Minami Hamabe, Megumi Hayashibara, Ogata Kenichi, Rikiya Koyama, Minami Takayama",
+            "premiere": "23/04/2020",
+            "time": "113 minutes",
+            "language": "Tiếng Nhật - Phụ đề Tiếng Việt; Lồng tiếng",
+            "price": "88.000",
+            "image": "https://www.cgv.vn/media/catalog/product/cache/1/small_image/190x260/052b7e4a4f6d2886829431e534ef7a43/c/o/conan_24_-_main_poster_1__1.jpg",
+            "description": "Thế vận hội thể thao lớn nhất thế giới được tổ chức tại Tokyo, Nhật Bản thu hút rất nhiều sự chú ý. Khi sự kiện ra mắt con tàu siêu tốc với tốc độ 1000km/h diễn ra cũng là lúc hàng loạt các vụ bắt cóc xảy ra! Gia tộc hiểm ác tụ tập tại đây sẽ gây ra một loạt sự kiện chấn động thế giới!"
+        },
+        {
+            "id": 21,
+            "category": "Movie",
+            "name": "Trùm cuối siêu đẳng",
+            "author": "Joe Carnahan",
+            "cast": "Frank Grillo, Mel Gibson, Naomi Watts, Dương Tử Quỳnh, Annabelle Wallis, Ken Jeong, Will Sasso, ….",
+            "premiere": "23/04/2020",
+            "time": "101 minutes",
+            "language": "Tiếng Anh - Phụ đề Tiếng Việt",
+            "price": "69.000",
+            "image": "https://www.cgv.vn/media/catalog/product/cache/1/small_image/190x260/052b7e4a4f6d2886829431e534ef7a43/b/o/boss_level_-_payoff_poster_1__1.jpg",
+            "description": "Mắc kẹt trong một vòng lặp thời gian ngay đúng ngày anh ta bị giết chết, một cựu đặc vụ Roy Pulver (Frank Gillo) đã phát hiện ra manh mới về một dự án bí mật của chính phủ có thể giải đáp bí ẩn đằng sau cái chết vô thời hạn của anh ta. Roy buộc lòng phải chạy đua với thời gian và truy bắt tên Colonel Ventor (Mel Gibson), đầu sỏ của dự án chính phủ này. Trong lúc đó, anh phải thoát khỏi cuộc vây bắt của những tên sát thủ tàn ác quyết tâm ngăn cản Roy tìm ra được sự thật. Liệu Roy Pulver có thể thoát khỏi vòng lặp này và cứu lấy gia đình đồng thời sống lại một lần nữa vào ngày mai?"
+        },
+        {
+            "id": 22,
+            "name": "Venom: Đối mặt tử thù",
+            "image": "https://www.cgv.vn/media/catalog/product/cache/1/small_image/190x260/052b7e4a4f6d2886829431e534ef7a43/v/e/venom2_poster_main_1__1.jpg",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, consectetur?",
+            "category": "Coming",
+            "author": "Mado Nozaki",
+            "premiere": "24/09/2021",
+            "time": "120 minutes",
+            "price": "79.000",
+            "language": "Tiếng Anh - Phụ đề Tiếng Việt"
+        },
+        {
+            "id": 23,
+            "name": "Minions: Sự trỗi dậy của Gru",
+            "image": "https://www.cgv.vn/media/catalog/product/cache/1/small_image/190x260/052b7e4a4f6d2886829431e534ef7a43/p/o/poster_minions_3_1__1.jpg",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, consectetur?",
+            "category": "Coming",
+            "author": "Mado Nozaki",
+            "premiere": "24/09/2021",
+            "time": "120 minutes",
+            "price": "100.000",
+            "language": "Tiếng Anh - Phụ đề Tiếng Việt"
+        },
+        {
+            "id": 24,
+            "name": "Nhóc trùm: Nối nghiệp gia đình",
+            "image": "https://www.cgv.vn/media/catalog/product/cache/1/small_image/190x260/052b7e4a4f6d2886829431e534ef7a43/n/h/nh_c_tr_m_n_i_nghi_p_gia_nh_1.jpg",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, consectetur?",
+            "category": "Coming",
+            "author": "Mado Nozaki",
+            "premiere": "24/09/2021",
+            "time": "120 minutes",
+            "price": "110.000",
+            "language": "Tiếng Anh - Phụ đề Tiếng Việt"
+        },
+        {
+            "id": 25,
+            "name": "Hố địa ngục",
+            "image": "https://www.cgv.vn/media/catalog/product/cache/1/small_image/190x260/052b7e4a4f6d2886829431e534ef7a43/s/u/superdeep_-_poster_1__1.jpg",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, consectetur?",
+            "category": "Coming",
+            "author": "Mado Nozaki",
+            "premiere": "24/09/2021",
+            "time": "120 minutes",
+            "price": "120.000",
+            "language": "Tiếng Anh - Phụ đề Tiếng Việt"
+        },
+        {
+            "id": 26,
+            "name": "Chìa khóa trăm tỷ",
+            "image": "https://www.cgv.vn/media/catalog/product/cache/1/small_image/190x260/052b7e4a4f6d2886829431e534ef7a43/c/k/cktt_teaser_digital_1__1.jpg",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, consectetur?",
+            "category": "Coming",
+            "author": "Mado Nozaki",
+            "premiere": "30/07/2021",
+            "time": "120 minutes",
+            "price": "90.000",
+            "language": "Tiếng Việt - Phụ đề Tiếng Anh"
+        },
+        {
+            "id": 27,
+            "name": "Hoàng tử hát rong",
+            "image": "https://www.cgv.vn/media/catalog/product/cache/1/small_image/190x260/052b7e4a4f6d2886829431e534ef7a43/t/h/the-box-cgv-poster-chanyeol-hoang-tu-hat-rong_1__1.jpg",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, consectetur?",
+            "category": "Coming",
+            "author": "Mado Nozaki",
+            "premiere": "30/07/2021",
+            "time": "120 minutes",
+            "price": "80.000",
+            "language": "Tiếng Việt - Phụ đề Tiếng Anh"
+        },
+        {
+            "id": 28,
+            "category": "Manga",
+            "name": "One Piece",
+            "image": "https://s199.imacdn.com/tt24/2020/02/28/8d6d35f1c174751e_35b873941cbe1e6f_52428158288498841.jpg",
+            "chap": 1019
+        },
+        {
+            "id": 29,
+            "category": "Manga",
+            "name": "Dagashi Kashi",
+            "image": "https://s199.imacdn.com/tt24/2020/03/30/07d150d06149c202_6e7df99d18fd15fb_297981585567946245957.jpg",
+            "chap": 162
+        },
+        {
+            "id": 30,
+            "category": "Manga",
+            "name": "Jibaku Shounen Hanako-kun",
+            "image": "https://s199.imacdn.com/tt24/2020/08/03/fcc63590e507b7d6_fa50906c3ec31a8f_387351596433343245957.jpg",
+            "chap": 78
+        },
+        {
+            "id": 31,
+            "category": "Manga",
+            "name": "Dr Stone",
+            "image": "https://s199.imacdn.com/tt24/2020/03/06/1e780f1016157342_068ff9c4697fd38b_32305158347016821.jpg",
+            "chap": 204
+        },
+        {
+            "id": 32,
+            "category": "Manga",
+            "name": "Black Clover",
+            "image": "https://s199.imacdn.com/tt24/2020/03/06/889f84dd4127c4c3_f46f1f911956fb50_36147158347140031.jpg",
+            "chap": 299
+        },
+        {
+            "id": 33,
+            "category": "Manga",
+            "name": "Eden's Zero",
+            "image": "https://s199.imacdn.com/tt24/2020/04/20/71bbcc8801f3fb57_8a7789c48f400894_4037315873661739185710.jpg",
+            "chap": 150
+        },
+        {
+            "id": 34,
+            "path": "https://vuighe.net/video/6982662",
+            "image": "https://s199.imacdn.com/vg/2021/07/17/6ab5f25bf39cf0ce_3fe548c738eb0640_2504816265040999580120.jpg",
+            "content": "Khi bạn có sức mạnh mà quá lương thiện, thì hãy để người khác dùng nó!",
+            "time": "02:59",
+            "category": "Video"
+        },
+        {
+            "id": 35,
+            "path": "https://vuighe.net/video/6982661",
+            "image": "https://s199.imacdn.com/vg/2021/07/04/4d57f4dd1b632789_0cfc70c6fa1def78_2781216253916284580120.jpg",
+            "content": "Mình còn trẻ mà, chết uổng dữ lắm!",
+            "time": "01:40",
+            "category": "Video"
+        },
+        {
+            "id": 36,
+            "path": "https://vuighe.net/video/6982660",
+            "image": "https://s199.imacdn.com/vg/2021/07/01/189d07a08d1b0cca_bb2f4f2e7fd5bc3e_2446316251451337580120.jpg",
+            "content": "Khi đã cận kề cái chết!",
+            "time": "02:51",
+            "category": "Video"
+        },
+        {
+            "id": 37,
+            "path": "https://vuighe.net/video/6982659",
+            "image": "https://s199.imacdn.com/vg/2021/06/29/83d4c33b0dbe02f8_8e32efc13c94a4cd_2666016249610144580120.jpg",
+            "content": "Đã nói đi giết quỷ chung rồi mà?! Nỡ bỏ người ta lại một mình vậy á!!",
+            "time": "02:59",
+            "category": "Video"
+        },
+        {
+            "id": 38,
+            "path": "https://vuighe.net/video/6982658",
+            "image": "https://s199.imacdn.com/vg/2021/06/26/5c87cad8c0b31d89_38faaeac009afee7_2187916246884941580120.jpg",
+            "content": "Nuốt ngón tay của Ryomen Sukuna, Yuji bị Bất Tủ Vương chiếm lấy cơ thể!",
+            "time": "02:59",
+            "category": "Video"
+        },
+        {
+            "id": 39,
+            "path": "https://vuighe.net/video/6982657",
+            "image": "https://s199.imacdn.com/vg/2021/06/25/13301a225895616b_dc24b0236407b5f1_2149016246191481580120.jpg",
+            "content": "Người chồng nghiện ma túy, nửa đêm về nhà sát hại vợ!",
+            "time": "01:41",
+            "category": "Video"
+        },
+        {
+            "id": 40,
+            "path": "https://vuighe.net/video/6982656",
+            "image": "https://s199.imacdn.com/vg/2021/06/24/3545a465ec8bdccd_5a55dfcace30cb64_3676116245242474580120.jpg",
+            "content": "Kiếm thuật của nhà Kamado: Vũ Điệu Tế Hỏa Thần!",
+            "time": "02:59",
+            "category": "Video"
+        },
+        {
+            "id": 41,
+            "path": "https://vuighe.net/video/6982655",
+            "image": "https://s199.imacdn.com/vg/2021/06/23/2af411e7b4abbf26_01deb68b2510e23b_15793316244582384118684.jpg",
+            "content": "Dù ít nói nhưng mình vẫn hiểu được",
+            "time": "02:59",
+            "category": "Video"
+        },
+        {
+            "id": 42,
+            "category": "Blog",
+            "content": "BỘ PHIM MỚI VỀ KONOSUBA SẼ SỚM ĐƯỢC RA MẮT TRONG THỜI GIAN TỚI",
+            "images": "https://s199.imacdn.com/ta/2021/07/18/504de12118e4a4a1_e02b1ddfd9e6d71a_8378916266272759734221.jpg"
+        },
+        {
+            "id": 43,
+            "category": "Blog",
+            "content": "SHINKA NO MI - KHI CHÀNG TRAI XẤU XÍ ĐƯỢC CHUYỂN SINH",
+            "images": "https://s199.imacdn.com/ta/2021/07/11/f0d3fe542b45ae41_f357aa6c7a8f17d2_5253816260125376185710.jpg"
+        },
+        {
+            "id": 44,
+            "category": "Blog",
+            "content": "ISEKAI YAKKYOKU - DƯỢC SĨ CHUYỂN SINH!",
+            "images": "https://s199.imacdn.com/ta/2021/07/17/66b9dade5da8aa46_f41b8e6d07bb0db2_2477216265110619185710.jpg"
+        },
+        {
+            "id": 45,
+            "category": "Blog",
+            "content": "JUJUTSU KAISEN LÀ ANIME ĐƯỢC XEM NHIỀU NHẤT Ở NHẬT BẢN VÀO THÁNG 6",
+            "images": "https://s199.imacdn.com/ta/2021/07/15/25a1847ef7f0cee5_5cd7d787ad8d1338_5726616263601202769722.jpg"
+        },
+        {
+            "id": 46,
+            "category": "Blog",
+            "content": "TANTEI WA MOU, SHINDEIRU - NỮ THÁM TỬ ĐÃ CHẾT!",
+            "images": "https://s199.imacdn.com/ta/2021/07/17/52d079cd5e2c0685_0d441b0d04484696_4015816265116403185710.jpg"
+        },
+        {
+            "id": 47,
+            "category": "Blog",
+            "content": "TOKYO REVENGERS ĐƯỢC LẤY CẢM HỨNG TỪ 'RE: ZERO' VÀ 'ERASED'",
+            "images": "https://s199.imacdn.com/ta/2021/07/11/17c955a7919bced8_ace0ce8e024b7a70_6979816259815686769722.jpg"
+        },
+        {
+            "id": 48,
+            "category": "Blog",
+            "content": "NHỮNG LÍ DO NÀO KHIẾN CHO MOVIE CỦA 'KIMETSU NO YAIBA' - MUGEN TRAIN ĐẠT NHỮNG THÀNH TÍCH VANG DỘI NHƯ VẬY?",
+            "images": "https://s199.imacdn.com/ta/2021/06/08/dcb06d24f3bb3388_1557c72199bff7a5_7381216231606313769722.jpg"
+        },
+        {
+            "id": 49,
+            "category": "Blog",
+            "content": "LẦN ĐẦU TIÊN TRONG LỊCH SỬ, DORAEMON THE MOVIE 2021 CHÍNH THỨC DỜI VỀ 2022!",
+            "images": "https://s199.imacdn.com/ta/2021/07/17/d19e2cec919aaf72_8bd6a683bca83a08_4173516265313354185710.jpg"
+        },
+        {
+            "id": 50,
+            "category": "Blog",
+            "content": "CHỜ ĐỢI MÀN RA MẮT CỦA ANIME SPRIGGAN TRONG NĂM 2022",
+            "images": "https://s199.imacdn.com/ta/2021/07/09/21b02f8122517fcf_e09b606454cfaaf6_4056216258400168734221.jpg"
+        },
+        {
+            "id": 51,
+            "category": "Blog",
+            "content": "DÕI THEO HÀNH TRÌNH CỦA CÔ GÁI CÓ KHẢ NĂNG NHÌN THẤY QUÁI VẬT TRONG ANIME MIERUKO-CHAN",
+            "images": "https://s199.imacdn.com/ta/2021/07/16/8c9b7000845f8bc0_5f666411ff6928f3_7405216264341342734221.jpg"
+        },
+        {
+            "id": 52,
+            "category": "Blog",
+            "content": "CÔNG BỐ TRAILER ĐẶC BIỆT CHO ANIME DEEMO: SAKURA NO OTO - ANATA NO KANADETA OTO GA, IMA MO HIBIKU",
+            "images": "https://s199.imacdn.com/ta/2021/07/14/49f0a268cd12af3a_82b2abc9aa8d8559_5320316262641001734221.jpg"
+        },
+        {
+            "id": 53,
+            "category": "Blog",
+            "content": "CÔNG BỐ HÌNH ẢNH VISUAL MỚI CỦA ANIME GEKIJO-BAN SWORD ART ONLINE: PROGRESSIVE HOSHI NAKI YORU NO ARIA",
+            "images": "https://s199.imacdn.com/ta/2021/07/10/9ea0b707cadcac12_2b948cba52ada839_6753816259208642734221.jpg"
+        },
+        {
+            "id": 54,
+            "name": "Naruto Shippuden",
+            "image": "https://s199.imacdn.com/vg/2016/07/01/7c868aa86063686d_d749742c8f567c0c_44135146734386613.jpg",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, consectetur?",
+            "category": "Anime",
+            "author": "Mado Nozaki",
+            "premiere": "19/9/2020",
+            "time": "120 minutes",
+            "price": "89.000",
+            "language": "Tiếng Nhật - Phụ đề Tiếng Việt",
+            "top": 1,
+            "rank": true
+        },
+        {
+            "id": 55,
+            "name": "Boruto: Next Generations",
+            "image": "https://img.vncdn.xyz/static/images/1625071335-boruto-naruto-next-generations-f1877.jpg",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, consectetur?",
+            "category": "Anime",
+            "author": "Tappei Nagatsuki",
+            "premiere": "19/9/2020",
+            "time": "120 minutes",
+            "price": "89.000",
+            "language": "Tiếng Nhật - Phụ đề Tiếng Việt",
+            "top": 2,
+            "rank": true
+        },
+        {
+            "id": 56,
+            "name": "Demon Slayer",
+            "image": "https://raw.githubusercontent.com/trananhtuat/flix-movie-homepage/main/images/cartoons/demon-slayer.jpg",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, consectetur?",
+            "category": "Anime",
+            "author": "Gotouge Koyoharu",
+            "premiere": "19/9/2020",
+            "time": "120 minutes",
+            "price": "89.000",
+            "language": "Tiếng Nhật - Phụ đề Tiếng Việt",
+            "top": 3,
+            "rank": true
+        },
+        {
+            "id": 57,
+            "name": "Date A Live",
+            "image": "https://upload.wikimedia.org/wikipedia/en/1/1b/Date_A_Live_Movie_Mayuri_Judgement_Poster.png",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, consectetur?",
+            "category": "Anime",
+            "author": "Koshi Tachibana",
+            "premiere": "19/9/2020",
+            "time": "120 minutes",
+            "price": "89.000",
+            "language": "Tiếng Nhật - Phụ đề Tiếng Việt",
+            "top": 4,
+            "rank": true
+        },
+        {
+            "id": 58,
+            "name": "Conan The Movie",
+            "image": "https://2.bp.blogspot.com/6lNQ0GZOE34eDx7ufhuibkhN466BNVR0dUuAwDiCv6C3cM2bAwE1Go42HPVYKjI78r0=s500",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, consectetur?",
+            "category": "Anime",
+            "author": "Oima Yoshitoki",
+            "premiere": "19/9/2020",
+            "time": "120 minutes",
+            "price": "89.000",
+            "language": "Tiếng Nhật - Phụ đề Tiếng Việt",
+            "top": 5,
+            "rank": true
+        },
+        {
+            "id": 59,
+            "name": "Dragon Ball",
+            "image": "https://raw.githubusercontent.com/trananhtuat/flix-movie-homepage/main/images/cartoons/dragon.jpg",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, consectetur?",
+            "category": "Anime",
+            "author": "Toei Animation",
+            "premiere": "19/9/2020",
+            "time": "120 minutes",
+            "price": "89.000",
+            "language": "Tiếng Nhật - Phụ đề Tiếng Việt",
+            "top": 6,
+            "rank": true
+        },
+        {
+            "id": 60,
+            "name": "Weathering",
+            "image": "https://raw.githubusercontent.com/trananhtuat/flix-movie-homepage/main/images/cartoons/weathering.jpg",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, consectetur?",
+            "category": "Anime",
+            "author": "Shinkai Makoto",
+            "premiere": "19/9/2020",
+            "time": "120 minutes",
+            "price": "89.000",
+            "language": "Tiếng Nhật - Phụ đề Tiếng Việt",
+            "top": 7,
+            "rank": true
+        },
+        {
+            "id": 61,
+            "category": "Manga",
+            "name": "Truy Tìm Sát Lĩnh Vương",
+            "image": "https://s199.imacdn.com/tt24/2020/03/27/4fc4369b769cf210_16815d8e21195907_393071585324533545957.jpg",
+            "chap": 74
+        },
+        {
+            "id": 62,
+            "category": "Manga",
+            "name": "Đại Vương Tha Mạng",
+            "image": "https://s199.imacdn.com/tt24/2021/03/23/f6de7826fb4a37b4_1bf68a63234d59fc_447131616495692645957.jpg",
+            "chap": 274
+        },
+        {
+            "id": 63,
+            "category": "Manga",
+            "name": "Tối Cường Phản Sáo",
+            "image": "https://s199.imacdn.com/tt24/2020/09/07/9ded801eb9c874e0_c4bf40a8d50c8ec7_274481599442350245957.jpg",
+            "chap": 274
+        },
+        {
+            "id": 64,
+            "category": "Manga",
+            "name": "Long Vương Truyền Thuyết",
+            "image": "https://s199.imacdn.com/tt24/2020/05/13/e7935fda6e11cf3c_4b7dbd545a11b5f6_415251589328303245957.jpg",
+            "chap": 249
+        },
+        {
+            "id": 65,
+            "category": "Manga",
+            "name": "Tensei Shintara Slime Datta Ken",
+            "image": "https://s199.imacdn.com/tt24/2020/03/11/d0a6d098a0c55b5c_6fe29c12231af20b_419611583929619345957.jpg",
+            "chap": 249
+        },
+        {
+            "id": 66,
+            "category": "Manga",
+            "name": "Thám Tử Lừng Danh Conan",
+            "image": "https://s199.imacdn.com/tt24/2020/03/19/5d47c1a3006c4106_fbb79ad7bbd42027_224941584606669445957.jpg",
+            "chap": 1076
+        },
+        {
+            "id": 67,
+            "category": "Manga",
+            "name": "Boruto",
+            "image": "https://s199.imacdn.com/tt24/2021/06/27/44052577c74200b9_323794ce80f21f17_29998162478009179674.jpg",
+            "chap": 60
+        },
+        {
+            "id": 68,
+            "category": "Manga",
+            "name": "Hội Pháp Sư",
+            "image": "https://s199.imacdn.com/tt24/2021/05/18/884fa6f03fd8a139_d28468b67fd2a93e_38974162133094169674.jpg",
+            "chap": 86
+        },
+        {
+            "id": 69,
+            "category": "Manga",
+            "name": "Horimiya",
+            "image": "https://s199.imacdn.com/tt24/2021/02/06/a4999dad14f147e9_de02670b9d98963f_331791612611567245957.jpg",
+            "chap": 121
+        },
+        {
+            "id": 70,
+            "category": "Manga",
+            "name": "Yofukashi No Uta",
+            "image": "https://s199.imacdn.com/tt24/2020/09/28/5e03323111586091_2df3b36d21147f70_321871601262915845957.jpg",
+            "chap": 50
+        }
+    ]
+}

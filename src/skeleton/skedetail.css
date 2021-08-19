@@ -1,0 +1,117 @@
+.ske-item {
+    margin-top: 30px;
+}
+
+.ske-item-image {
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    height: 289px;
+    background: #777;
+    border-radius: 4px;
+}
+
+.ske-movie-name {
+    overflow: hidden;
+    height: 40px;
+    width: 500px;
+    background: #777;
+    border-radius: 4px;
+    position: relative;
+}
+
+.ske-description-order {
+    position: relative;
+    overflow: hidden;
+    height: 25px;
+    width: 300px;
+    background: #777;
+    border-radius: 4px;
+}
+
+.ske-description-cast {
+    position: relative;
+    overflow: hidden;
+    height: 25px;
+    width: 200px;
+    background: #777;
+    border-radius: 4px;
+}
+
+.ske-description-time,
+.ske-description-premiere {
+    position: relative;
+    overflow: hidden;
+    height: 25px;
+    width: 100px;
+    background: #777;
+    border-radius: 4px;
+}
+
+.ske-description-language {
+    position: relative;
+    overflow: hidden;
+    height: 25px;
+    width: 150px;
+    background: #777;
+    border-radius: 4px;
+}
+
+.ske-description-category {
+    position: relative;
+    overflow: hidden;
+    height: 25px;
+    width: 150px;
+    background: #777;
+    border-radius: 4px;
+}
+
+.ske-description-author {
+    position: relative;
+    overflow: hidden;
+    height: 25px;
+    width: 140px;
+    background: #777;
+    border-radius: 4px;
+}
+
+.ske-describe-movie {
+    position: relative;
+    overflow: hidden;
+    height: 25px;
+    width: 500px;
+    background: #777;
+    border-radius: 4px;
+}
+
+.ske_main {
+    width: 200px;
+    height: 280px;
+    background: #444;
+}
+
+.ske-description-cast::after,
+.ske-movie-name::after,
+.ske-description-order::after,
+.ske-description-time::after,
+.ske-description-premiere::after,
+.ske-description-language::after,
+.ske-description-category::after,
+.ske-description-author::after,
+.ske-item-image::after,
+.ske-describe-movie::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    animation: loading-detail 1.5s infinite;
+}
+
+@keyframes loading-detail {
+    100% {
+        transform: translateX(100%);
+    }
+}

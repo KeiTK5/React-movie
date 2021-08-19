@@ -1,0 +1,54 @@
+[
+    {
+        "id": 1,
+        "name": "Tensei Shitara Slime Datta Ken",
+        "image": "https://s199.imacdn.com/vg/2021/01/14/ee01a5c2f2c7a8cc_d47b6502f5f12ee7_3114051610597814561628.jpg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, consectetur?",
+        "category": "Movies",
+        "author": "Mado Nozaki",
+        "premiere": "30/07/2021",
+        "time": "120 minutes",
+        "language": "Tiếng Anh - Phụ đề Tiếng Việt",
+        "display": true,
+        "hot": true
+    },
+    {
+        "id": 2,
+        "name": "Kobayashi-san Chi No Maid Dragon",
+        "image": "https://s199.imacdn.com/vg/2021/07/16/60d6a5fcc8cd36cb_04b480eeaf39b01b_42218116263711174118684.jpg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, consectetur?",
+        "category": "Anime",
+        "author": "Mado Nozaki",
+        "premiere": "30/07/2021",
+        "time": "120 minutes",
+        "language": "Tiếng Nhật - Phụ đề Tiếng Việt",
+        "display": true,
+        "hot": true
+    },
+    {
+        "id": 3,
+        "name": "Kanojo Mo Kanojo",
+        "image": "https://s199.imacdn.com/vg/2021/06/28/9dc29adee7e50393_5ab95c94d2ebbfe9_10712416248597786118684.jpg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, consectetur?",
+        "category": "Anime",
+        "author": "Mado Nozaki",
+        "premiere": "30/07/2021",
+        "time": "120 minutes",
+        "language": "Tiếng Nhật - Phụ đề Tiếng Việt",
+        "display": true,
+        "hot": true
+    },
+    {
+        "id": 4,
+        "name": "Kimetsu No Yaiba",
+        "image": "https://s199.imacdn.com/vg/2021/06/11/ea8984a4e8d2751f_ba967bbe5b6addd6_60989616234154076118684.jpg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, consectetur?",
+        "category": "Anime",
+        "author": "Mado Nozaki",
+        "premiere": "30/07/2021",
+        "time": "120 minutes",
+        "language": "Tiếng Nhật - Phụ đề Tiếng Việt",
+        "display": false,
+        "hot": false
+    }
+]
