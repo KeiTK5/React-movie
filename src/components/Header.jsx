@@ -100,7 +100,6 @@ function Header() {
                     </li>
                     <li><a className="nav-hover" href="/blog">API</a></li>
                     <li><a className="nav-hover" href="/rank">BXH</a></li>
-                    <li><a className="nav-hover" href="/baocao">Báo cáo</a></li>
                 </ul>
                 <div className="nav-search">
                     <input type="text" className="search-input" placeholder="Search" />
