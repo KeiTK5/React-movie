@@ -14,7 +14,7 @@ const Render = (props) => {
                     <i className='bx bx-play-circle'></i>
                     <span className="time"></span>
                 </div>
-                <a href={`/detail/${item.category}/${item.name}/${item.id}`} className="video-content">{item.name}</a>
+                <a href={`/detail/${item.categoryId}/${item.name}/${item.id}`} className="video-content">{item.name}</a>
             </div>
         </div>
     )
@@ -26,15 +26,17 @@ function Type({ match, props }) {
     const [loading, setLoading] = useState(false)
 
     const path = match.params.category
+    const type = match.params.type
 
 
     useEffect(() => {
         setLoading(true)
         setTimeout(async () => {
-            const url = `http://localhost:3000/${path}`
+            const url = `https://json-server-anime.herokuapp.com/categories/${path}/animes?type=${type}`
             const res = await axios(url)
             setData(res.data)
             setLoading(false)
+            console.log(url);
         }, 1500);
     }, [path])
 
@@ -56,16 +58,12 @@ function Type({ match, props }) {
                 <div className="video">
                     <div className="row wow fadeIn">
                         {
-                            // data.map(item => (
-                            //     item.category === 'Video' ? <RenderVideo item={item} key={item.id} /> : null
-                            // ))
-
                             loading ?
                                 [1, 2, 3, 4, 5, 6, 7, 8].map(item => (
                                     <SkeType key={item} />
                                 )) :
                                 data.map(item => (
-                                    item.type === match.params.type ? <Render item={item} key={item.id} /> : null
+                                    <Render item={item} key={item.id} />
                                 ))
                         }
                     </div>

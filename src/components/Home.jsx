@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import data from '../assets/json/data.json';
 import Banner from './Banner/Banner';
@@ -7,10 +8,12 @@ import Cartoon from './Cartoon/Cartoon';
 import HotItems from './HotItem/HotItems';
 import Manga from './Manga/Manga';
 import Video from './video/Video';
+import { useAuth } from '../context/AuthorProvider'
 
 const arr = []
 
 function Home() {
+    const { user } = useAuth()
 
     const [buy, setBuy] = useState([])
 
@@ -35,9 +38,24 @@ function Home() {
     }, [buy])
 
 
-    const clickBuy = (name) => {
+    const clickBuy = async (item, quantity) => {
+        console.log(item);
         alert('Added to your ticket !')
-        data.data.filter(item => item.name === name).map(item => setBuy([item, ...buy]))
+        const url = 'https://json-server-anime.herokuapp.com/order'
+        const obj = {
+            user: user.email,
+            name: item.name,
+            price: item.price,
+            author: item.author,
+            image: item.image,
+            categoryId: item.categoryId,
+            premiere: item.premiere,
+            time: item.time,
+            language: item.language,
+            quantity: quantity
+        }
+        // // data.data.filter(item => item.name === name).map(item => setBuy([item, ...buy]))
+        await axios.post(url, obj)
     }
 
 
@@ -47,9 +65,9 @@ function Home() {
             <Bxh title={'Sắp chiếu'} title2={'Xếp hạng'} />
             <HotItems title={'Phim Hot'} clickBuy={clickBuy} />
             <Cartoon title={'Anime'} clickBuy={clickBuy} />
-            <Blog data={data.data} title={'Tin tức'} />
-            <Video data={data.data} title={'Video'} />
-            <Manga data={data.data} title={'Truyện tranh'} />
+            <Blog title={'Tin tức'} />
+            <Video title={'Video'} />
+            <Manga title={'Truyện tranh'} />
         </>
     );
 }

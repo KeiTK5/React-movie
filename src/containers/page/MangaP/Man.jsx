@@ -25,10 +25,11 @@ function Man({ match, props }) {
     useEffect(() => {
         setLoading(true)
         setTimeout(async () => {
-            const url = `http://localhost:3000/manga`
+            const url = `https://json-server-anime.herokuapp.com/categories/5/animes`
             const res = await axios(url)
             setData(res.data)
             setLoading(false)
+            console.log(url);
         }, 1500);
     }, [])
 
@@ -45,7 +46,7 @@ function Man({ match, props }) {
     }
 
     const pagination = data.slice(pageCurrent, pageCurrent + limit).map(item => (
-        item.type === match.params.type ? <Render item={item} key={item.id} /> : null
+        <Render item={item} key={item.id} />
     ))
 
 
@@ -65,9 +66,6 @@ function Man({ match, props }) {
                 <div className="video">
                     <div className="row wow fadeIn">
                         {
-                            // data.map(item => (
-                            //     item.type === match.params.type ? <Render item={item} key={item.id} /> : null
-                            // ))
                             pagination
                         }
                     </div>

@@ -27,35 +27,35 @@ function Header() {
                                 <div className="col-3 box-content">
                                     <div className="box">
                                         <ul>
-                                            <li><a href="/anime/action">Hành động</a></li>
-                                            <li><a href="/anime/fiction">Viễn tưởng</a></li>
-                                            <li><a href="/anime/romance">Lãng mạn</a></li>
+                                            <li><a href="/1/action">Hành động</a></li>
+                                            <li><a href="/1/fiction">Viễn tưởng</a></li>
+                                            <li><a href="/1/romance">Lãng mạn</a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div className="col-3 box-content">
                                     <div className="box">
                                         <ul>
-                                            <li><a href="/anime/horror">Kinh dị</a></li>
-                                            <li><a href="/anime/comedy">Hài hước</a></li>
-                                            <li><a href="/anime/school">Trường học</a></li>
+                                            <li><a href="/1/horror">Kinh dị</a></li>
+                                            <li><a href="/1/comedy">Hài hước</a></li>
+                                            <li><a href="/1/school">Trường học</a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div className="col-3 box-content">
                                     <div className="box">
                                         <ul>
-                                            <li><a href="/anime/music">Âm nhạc</a></li>
-                                            <li><a href="/anime/adventure">Phiêu lưu</a></li>
-                                            <li><a href="/anime/supernatural">Siêu nhiên</a></li>
+                                            <li><a href="/1/music">Âm nhạc</a></li>
+                                            <li><a href="/1/adventure">Phiêu lưu</a></li>
+                                            <li><a href="/1/supernatural">Siêu nhiên</a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div className="col-3 box-content">
                                     <div className="box">
                                         <ul>
-                                            <li><a href="/anime/life">Đời thường</a></li>
-                                            <li><a href="/anime/thrilling">Kịch tính</a></li>
+                                            <li><a href="/1/life">Đời thường</a></li>
+                                            <li><a href="/1/thrilling">Kịch tính</a></li>
                                             <li><a href="/manga">Truyện</a></li>
                                         </ul>
                                     </div>
@@ -71,27 +71,27 @@ function Header() {
                                 <div className="col-4 box-content">
                                     <div className="box">
                                         <ul>
-                                            <li><a href="/movie/hot">Phim Hot</a></li>
-                                            <li><a href="/movie/coming">Sắp chiếu</a></li>
-                                            <li><a href="/movie/action">Hành động</a></li>
+                                            <li><a href="/2/hot">Phim Hot</a></li>
+                                            <li><a href="/2/coming">Sắp chiếu</a></li>
+                                            <li><a href="/2/action">Hành động</a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div className="col-4 box-content">
                                     <div className="box">
                                         <ul>
-                                            <li><a href="/movie/romance">Lãng mạn</a></li>
-                                            <li><a href="/movie/comedy">Hài hước</a></li>
-                                            <li><a href="/movie/science">Khoa học</a></li>
+                                            <li><a href="/2/romance">Lãng mạn</a></li>
+                                            <li><a href="/2/comedy">Hài hước</a></li>
+                                            <li><a href="/2/science">Khoa học</a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div className="col-4 box-content">
                                     <div className="box">
                                         <ul>
-                                            <li><a href="/movie/horror">Kinh dị</a></li>
-                                            <li><a href="/movie/fiction">Viễn tưởng</a></li>
-                                            <li><a href="/movie/show">TV Show</a></li>
+                                            <li><a href="/2/horror">Kinh dị</a></li>
+                                            <li><a href="/2/fiction">Viễn tưởng</a></li>
+                                            <li><a href="/2/show">TV Show</a></li>
                                         </ul>
                                     </div>
                                 </div>

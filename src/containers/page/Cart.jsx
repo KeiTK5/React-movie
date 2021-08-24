@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import './cart.css';
 
@@ -13,7 +14,7 @@ function RenderItem(props) {
             <div className="description-ticket">
                 <div className="title-ticket flxs">
                     <h5 className="name-ticket">Name: </h5>
-                    <a href={`/detail/${item.category}/${item.name}/${item.id}`} className="detail-ticket">{item.name}</a>
+                    <a href={`/detail/${item.categoryId}/${item.name}/${item.id}`} className="detail-ticket">{item.name}</a>
                 </div>
                 <div className="title-ticket flxs">
                     <h5 className="name-ticket">Cinema: </h5>
@@ -37,7 +38,7 @@ function RenderItem(props) {
                 </div>
                 <div className="title-ticket flxs">
                     <h5 className="name-ticket">Cancel: </h5>
-                    <span className="detail-ticket" onClick={() => handleDelete(item.name)}><i className='bx bx-x'></i></span>
+                    <span className="detail-ticket" onClick={() => handleDelete(item.id)}><i className='bx bx-x'></i></span>
                 </div>
             </div>
         </div>
@@ -58,34 +59,29 @@ function Total(props) {
     )
 }
 
-const arr = []
 
 function Cart({ match, props }) {
     const [cart, setCart] = useState([])
 
-    const handleDelete = (name) => {
-        const remove = [...cart].filter(item => item.name !== name)
-        setCart(remove)
+    const handleDelete = async (id) => {
+        const url = `https://json-server-anime.herokuapp.com/order/${id}`
+        await axios.delete(url)
     }
 
-    // lấy data
     useEffect(() => {
-        const local = localStorage.getItem("object")
-        if (local) {
-            setCart(JSON.parse(local) || arr)
+        const url = 'https://json-server-anime.herokuapp.com/order'
+        const fetch = async () => {
+            const res = await axios(url)
+            setCart(res.data)
         }
-    }, [])
-
-    // lưu data
-    useEffect(() => {
-        localStorage.setItem('object', JSON.stringify(cart))
+        fetch()
     }, [cart])
-
 
 
     const map = cart.map((item) => parseInt(item.price))
     const reducer = (a, b) => a + b;
     const price = map.reduce(reducer, 0)
+
 
 
     return (

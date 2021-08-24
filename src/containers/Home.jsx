@@ -39,9 +39,9 @@ function HomeContainer() {
                             <Route path="/user" component={User} />
                             <Route path="/detail/:category/:name/:id" component={Detail} />
                             <Route path="/:category/:type" component={Type} />
+                            <Route path="/manga" component={Man} />
                             <Route path="/rank" component={BXH} />
                             <Route path="/blog" component={Image} />
-                            <Route path="/manga" component={Man} />
                         </Switch>
                         <Footer />
                     </Router>

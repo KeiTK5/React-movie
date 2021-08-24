@@ -1,4 +1,5 @@
-import React from 'react';
+import axios from 'axios';
+import React, { useState, useEffect } from 'react';
 import './manga.css'
 
 function RenderManga(props) {
@@ -17,9 +18,17 @@ function RenderManga(props) {
 }
 
 function Manga(props) {
-    const { data } = props
+    const [data, setData] = useState([])
+    useEffect(() => {
+        const url = 'https://json-server-anime.herokuapp.com/categories/5/animes'
+        const fetch = async () => {
+            const res = await axios(url)
+            setData(res.data)
+        }
+        fetch()
+    }, [])
 
-    const arr = data.filter(item=>item.category === 'Manga').slice(0,6)
+    const arr = data.slice(0, 6)
 
     return (
         <section>
@@ -29,7 +38,7 @@ function Manga(props) {
                     <div className="row wow fadeIn">
                         {
                             arr.map(item => (
-                                item.category === 'Manga' ? <RenderManga item={item} key={item.id} /> : null 
+                                <RenderManga item={item} key={item.id} />
                             ))
                         }
                     </div>

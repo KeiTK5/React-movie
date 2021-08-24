@@ -1,4 +1,7 @@
 import React from 'react';
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import '@splidejs/splide/dist/css/themes/splide-default.min.css';
+
 import './banner.css'
 import banner from '../../assets/json/banner.json'
 
@@ -47,23 +50,57 @@ function Banner(props) {
                 <div className="row" >
                     <div className="col-9 col-md-9">
                         <div className="hero-main owl-carousel" id="hero-selection">
-                            {
-                                banner.map(item => (
-                                    <RenderImg item={item} key={item.id} />
-                                ))
-                            }
+                            <Splide options={{
+                                type: 'fade',
+                                rewind: true,
+                                autoplay: true,
+                                pagination: false,
+                                arrows: false,
+                                rewindSpeed: 1000,
+                                speed: 1000
+                            }}
+                            >
+                                {
+                                    banner.map((item, index) => (
+                                        <SplideSlide key={index}>
+                                            <RenderImg item={item} />
+                                        </SplideSlide>
+                                    ))
+                                }
+                            </Splide>
                         </div>
                     </div>
                     <div className="col-3 col-md-3">
                         <div className="hero-sub" id="hero-selection-sub">
-                            {
+                            <Splide options={{
+                                direction: 'ttb',
+                                type: 'loop',
+                                autoplay: true,
+                                height: '100%',
+                                gap: '1rem',
+                                perPage: 3,
+                                pagination: false,
+                                arrows: false
+                            }}
+                            >
+                                {
+                                    banner.map((item, index) => (
+                                        <SplideSlide key={index}>
+                                            <div className="hero-sub-image" key={index} >
+                                                <img src={item.image} alt="" />
+                                            </div>
+                                        </SplideSlide>
+                                    ))
+                                }
+                            </Splide>
+                            {/* {
                                 banner.map((item, index) => (
                                     item.display ?
                                         <div className="hero-sub-image" key={index} >
                                             <img src={item.image} alt="" />
                                         </div> : ''
                                 ))
-                            }
+                            } */}
                         </div>
                     </div>
                 </div>

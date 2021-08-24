@@ -77,32 +77,23 @@ function Render(props) {
 }
 
 function Detail({ match, props }) {
-    const [deltail, setDeltail] = useState([])
+    const [detail, setDetail] = useState([])
     const [loading, setLoading] = useState(false)
     const [buy, setBuy] = useState([])
     const [like, setLike] = useState(false)
 
+    const idLog = match.params.category
 
-
-    const path = match.params.category.charAt(0).toUpperCase() + match.params.category.slice(1)
-
-    const url = `http://localhost:3000/${path}`
 
     useEffect(() => {
+        const url = `https://json-server-anime.herokuapp.com/categories/${idLog}/animes`
         setLoading(true)
         setTimeout(async () => {
             const res = await axios(url)
-            setDeltail(res.data)
+            setDetail(res.data.filter(item => item.name === match.params.name))
             setLoading(false)
         }, 1500);
     }, [])
-
-
-
-
-
-
-    const txt = deltail.filter(item => item.name === match.params.name)
 
 
 
@@ -123,14 +114,14 @@ function Detail({ match, props }) {
     const clickBuy = (name) => {
         alert('Đã thêm vào giỏ hàng của bạn!')
         console.log(name);
-        deltail.filter(item => item.name === name).map(item => setBuy([item, ...buy]))
+        detail.filter(item => item.name === name).map(item => setBuy([item, ...buy]))
     }
 
     // yêu thích
     // const liked = (name) => {
     //     alert('Cảm ơn bạn đã yêu thích phim này ^^')
     //     console.log(name);
-    //     deltail.filter(item => item.name === name).map(item => setLike([item, ...like]))
+    //     detail.filter(item => item.name === name).map(item => setLike([item, ...like]))
     // }
 
     const liked = () => {
@@ -154,7 +145,7 @@ function Detail({ match, props }) {
                     <h3 className="title">Nội dung</h3>
                 </div>
                 {
-                    loading ? [1].map(item => (< SkeletonDetail key={item} />)) : txt.map(movie => (
+                    loading ? [1].map(item => (< SkeletonDetail key={item} />)) : detail.map(movie => (
                         <Render movie={movie} key={movie.id} like={like} liked={liked} clickBuy={clickBuy} />
                     ))
                 }

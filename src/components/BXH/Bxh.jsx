@@ -26,30 +26,20 @@ function Rank({ item }) {
     return (
         <div className="item-rank-wrapper">
             {
-                item.top === 1 ?
-                    <div className="rank-top">
-                        <div className="image-top">
-                            <img src={item.image} alt="" />
-                        </div>
-                        <div className="content-top">
-                            <a href={`/detail/${item.category}/${item.name}/${item.id}`} className="name-rank">{item.name}</a>
-                        </div>
-
-                    </div> :
-                    <div className="item-rank">
-                        <div className="image-rank">
-                            <img src={item.image} alt="" />
-                        </div>
-                        <div className="content-rank">
-                            <a href={`/detail/${item.category}/${item.name}/${item.id}`} className="name-rank">{item.name}</a>
-                            <span className="view-rank"></span>
-                        </div>
-                        <div className="number-rank">
-                            <span className="number">
-                                {item.top}
-                            </span>
-                        </div>
+                <div className="item-rank">
+                    <div className="image-rank">
+                        <img src={item.image} alt="" />
                     </div>
+                    <div className="content-rank">
+                        <a href={`/detail/${item.categoryId}/${item.name}/${item.id}`} className="name-rank">{item.name}</a>
+                        <span className="view-rank"></span>
+                    </div>
+                    <div className="number-rank">
+                        <span className="number">
+                            {item.view}
+                        </span>
+                    </div>
+                </div>
             }
         </div>
     )
@@ -64,9 +54,9 @@ function Bxh(props) {
     useEffect(() => {
         setLoading(true)
         setTimeout(async () => {
-            const url = 'http://localhost:3000/bxh'
+            const url = 'https://json-server-anime.herokuapp.com/categories/1/animes?_sort=view&_order=desc'
             const res = await axios(url)
-            setBxh(res.data)
+            setBxh(res.data.slice(0, 7))
             setLoading(false)
         }, 3500);
     }, [])
@@ -74,7 +64,7 @@ function Bxh(props) {
     useEffect(() => {
         setLoading(true)
         setTimeout(async () => {
-            const url = 'http://localhost:3000/coming'
+            const url = 'https://json-server-anime.herokuapp.com/categories/4/animes'
             const res = await axios(url)
             setComing(res.data)
             setLoading(false)

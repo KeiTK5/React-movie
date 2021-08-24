@@ -1,4 +1,5 @@
-import React from 'react';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 import './video.css'
 
 
@@ -19,7 +20,15 @@ function RenderVideo(props) {
 }
 
 function Video(props) {
-    const { data } = props
+    const [data, setData] = useState([])
+    useEffect(() => {
+        const url = 'https://json-server-anime.herokuapp.com/categories/3/animes'
+        const fetch = async () => {
+            const res = await axios(url)
+            setData(res.data)
+        }
+        fetch()
+    }, [])
     return (
         <section>
             <div className="container">
@@ -28,7 +37,7 @@ function Video(props) {
                     <div className="row wow fadeIn">
                         {
                             data.map(item => (
-                                item.category === 'Video' ? <RenderVideo item={item} key={item.id} /> : null
+                                <RenderVideo item={item} key={item.id} />
                             ))
                         }
                     </div>

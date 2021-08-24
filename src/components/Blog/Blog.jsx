@@ -1,6 +1,8 @@
 import React from 'react';
+import { useEffect } from 'react';
+import { useState } from 'react';
 import './blog.css'
-
+import axios from 'axios';
 
 function RenderBlog(props) {
     const { item } = props
@@ -19,7 +21,15 @@ function RenderBlog(props) {
 }
 
 function Blog(props) {
-    const { data } = props
+    const [data, setData] = useState([])
+    useEffect(() => {
+        const url = 'https://json-server-anime.herokuapp.com/categories/6/animes'
+        const fetch = async () => {
+            const res = await axios(url)
+            setData(res.data)
+        }
+        fetch()
+    }, [])
     return (
         <section className="wow fadeIn">
             <div className="container">
@@ -28,7 +38,7 @@ function Blog(props) {
                     <div className="row">
                         {
                             data.map(item => (
-                                item.category === 'Blog' ? <RenderBlog item={item} key={item.id} /> : null
+                                <RenderBlog item={item} key={item.id} />
                             ))
                         }
                     </div>

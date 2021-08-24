@@ -50,5 +50,18 @@
         "language": "Tiếng Nhật - Phụ đề Tiếng Việt",
         "display": false,
         "hot": false
+    },
+    {
+        "id": 5,
+        "name": "Kobayashi-san Chi no Maid Dragon",
+        "image": "https://s199.imacdn.com/vg/2021/07/13/2c450c03dc1ea113_b9c5354a44be465a_44528516261833284118684.jpg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, consectetur?",
+        "category": "Anime",
+        "author": "Mado Nozaki",
+        "premiere": "30/07/2021",
+        "time": "120 minutes",
+        "language": "Tiếng Nhật - Phụ đề Tiếng Việt",
+        "display": false,
+        "hot": false
     }
 ]

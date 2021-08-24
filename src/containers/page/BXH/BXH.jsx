@@ -14,7 +14,7 @@ const Render = (props) => {
                     <i className='bx bx-play-circle'></i>
                     <span className="time"></span>
                 </div>
-                <a href={`/detail/${item.category}/${item.name}/${item.id}`} className="video-content">{item.name}</a>
+                <a href={`/detail/${item.categoryId}/${item.name}/${item.id}`} className="video-content">{item.name}</a>
             </div>
         </div>
     )
