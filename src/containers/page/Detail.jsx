@@ -2,6 +2,8 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import SkeletonDetail from '../../skeleton/SkeletonDetail';
 import Comment from './Comment';
+import { useAuth } from '../../context/AuthorProvider'
+
 import './detail.css';
 
 
@@ -51,7 +53,7 @@ function Render(props) {
                                     like ? <><i className='bx bx-check'></i>Liked</> : <><i className='bx bx-like'></i>Like</>
                                 }
                             </span>
-                            <span className="author-main" onClick={() => clickBuy(movie.name)}>
+                            <span className="author-main" onClick={() => clickBuy(1, movie)}>
                                 <i className='bx bx-sticker' ></i>Đặt vé
                             </span>
                         </div>
@@ -77,6 +79,7 @@ function Render(props) {
 }
 
 function Detail({ match, props }) {
+    const { user } = useAuth()
     const [detail, setDetail] = useState([])
     const [loading, setLoading] = useState(false)
     const [buy, setBuy] = useState([])
@@ -111,18 +114,24 @@ function Detail({ match, props }) {
     }, [buy])
 
     // click buy
-    const clickBuy = (name) => {
-        alert('Đã thêm vào giỏ hàng của bạn!')
-        console.log(name);
-        detail.filter(item => item.name === name).map(item => setBuy([item, ...buy]))
+    const clickBuy = async (quantity, item) => {
+        alert('Added to your ticket !')
+        const url = 'https://json-server-anime.herokuapp.com/order'
+        const obj = {
+            user: user.email,
+            name: item.name,
+            price: item.price,
+            author: item.author,
+            image: item.image,
+            categoryId: item.categoryId,
+            premiere: item.premiere,
+            time: item.time,
+            language: item.language,
+            quantity: quantity
+        }
+        await axios.post(url, obj)
     }
 
-    // yêu thích
-    // const liked = (name) => {
-    //     alert('Cảm ơn bạn đã yêu thích phim này ^^')
-    //     console.log(name);
-    //     detail.filter(item => item.name === name).map(item => setLike([item, ...like]))
-    // }
 
     const liked = () => {
         setLike(!like)

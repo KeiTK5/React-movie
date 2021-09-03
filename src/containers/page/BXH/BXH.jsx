@@ -27,7 +27,7 @@ function BXH({ match, props }) {
     useEffect(() => {
         setLoading(true)
         setTimeout(async () => {
-            const url = `http://localhost:3000/bxh`
+            const url = `https://json-server-anime.herokuapp.com/animes?_sort=view&_order=desc`
             const res = await axios(url)
             setData(res.data)
             setLoading(false)
@@ -57,7 +57,7 @@ function BXH({ match, props }) {
                                     <SkeType key={item} />
                                 )) :
                                 data.map(item => (
-                                    item.type === match.params.type ? <Render item={item} key={item.id} /> : null
+                                    <Render item={item} key={item.id} />
                                 ))
                         }
                     </div>

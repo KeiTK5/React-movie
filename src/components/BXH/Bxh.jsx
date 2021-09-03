@@ -14,7 +14,7 @@ function ComingSoon(props) {
                 <span className="premiere">
                     {item.premiere}
                 </span>
-                <a href={`/detail/${item.category}/${item.name}/${item.id}`} className="name-coming">
+                <a href={`/detail/${item.categoryId}/${item.name}/${item.id}`} className="name-coming">
                     {item.name}
                 </a>
             </div>
