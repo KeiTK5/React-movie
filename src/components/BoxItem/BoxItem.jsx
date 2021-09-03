@@ -15,7 +15,7 @@ function BoxItem(props) {
             <img src={item.image}
                 alt="" />
             <div className="movie-items-content">
-                <a href={`/detail/${item.categoryId}/${item.name}/${item.id}`} className="movie-items-title">
+                <a href={`./detail/${item.categoryId}/${item.name}/${item.id}`} className="movie-items-title">
                     {item.name}
                 </a>
                 <div className="item-content-action">

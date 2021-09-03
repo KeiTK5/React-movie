@@ -54,7 +54,6 @@ function Home() {
             language: item.language,
             quantity: quantity
         }
-        // // data.data.filter(item => item.name === name).map(item => setBuy([item, ...buy]))
         await axios.post(url, obj)
     }
 

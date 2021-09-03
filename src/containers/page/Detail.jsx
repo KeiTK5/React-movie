@@ -158,7 +158,10 @@ function Detail({ match, props }) {
                         <Render movie={movie} key={movie.id} like={like} liked={liked} clickBuy={clickBuy} />
                     ))
                 }
-                <Comment match={match} />
+                {
+                    user.email ? <Comment match={match} /> : null
+                }
+
             </div>
 
         </section>
