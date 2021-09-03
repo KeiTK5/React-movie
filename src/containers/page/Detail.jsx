@@ -159,7 +159,7 @@ function Detail({ match, props }) {
                     ))
                 }
                 {
-                    user.email ? <Comment match={match} /> : null
+                    user ? <Comment match={match} /> : null
                 }
 
             </div>
