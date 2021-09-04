@@ -26,6 +26,11 @@ code {
 }
 
 /* header */
+.nav-mobile {
+  cursor: pointer;
+  display: none;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -282,4 +287,28 @@ section {
 .dropdown-user ul li a {
   color: white;
   text-decoration: none;
+}
+
+/* media */
+@media only screen and (max-width: 850px) {
+  .nav-search {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: block;
+  }
+
+  header .action {
+    display: none;
+  }
+
+  .width-row {
+    width: 200px;
+  }
+  
+  .width-row-second {
+    width: 200px;
+  }
+
 }

@@ -6,7 +6,7 @@ import './mangaP.css'
 const Render = (props) => {
     const { item } = props
     return (
-        <div className="mangaP col-3 col-md-4 col-sm-6 blog-mg mg-top">
+        <div className="mangaP col-3 col-md-3 col-sm-6 blog-mg mg-top">
             <div className="video-item manga-item">
                 <img src={item.image} alt="" />
                 <a href={`/detail/${item.category}/${item.name}/${item.id}`} className="video-content">{item.name}</a>
@@ -35,7 +35,7 @@ function Man({ match, props }) {
 
     // paginate
     const [pageNumber, setPageNumber] = useState(0)
-    const limit = 10
+    const limit = 8
 
     const pageCurrent = pageNumber * limit
 

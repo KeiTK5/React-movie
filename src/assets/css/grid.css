@@ -111,6 +111,8 @@
 /* SMALL SCREEN */
 
 @media only screen and (max-width: 850px) {
+    
+
     .col-sm-1 {
         width: 8.33%;
     }

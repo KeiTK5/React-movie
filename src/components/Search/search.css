@@ -1,0 +1,26 @@
+.nav-search {
+    position: relative;
+}
+
+.nav-search .dropdown {
+    position: absolute;
+    top: calc(100%);
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    z-index: 20;
+    cursor: pointer;
+}
+
+.dropdown-item {
+    padding: 10px 15px;
+    color: var(--main-color);
+}
+
+.movie-items-search {
+    color: white;
+    text-decoration: none;
+}
+
+.movie-items-search:hover {
+    color: var(--main-color);
+}

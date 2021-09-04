@@ -10,7 +10,8 @@
         "time": "120 minutes",
         "language": "Tiếng Anh - Phụ đề Tiếng Việt",
         "display": true,
-        "hot": true
+        "hot": true,
+        "trailer": "https://www.youtube.com/embed/f6OUyjfKHlM"
     },
     {
         "id": 2,
@@ -23,7 +24,8 @@
         "time": "120 minutes",
         "language": "Tiếng Nhật - Phụ đề Tiếng Việt",
         "display": true,
-        "hot": true
+        "hot": true,
+        "trailer": "https://www.youtube.com/embed/4N6ozeZ2cA0"
     },
     {
         "id": 3,
@@ -36,7 +38,8 @@
         "time": "120 minutes",
         "language": "Tiếng Nhật - Phụ đề Tiếng Việt",
         "display": true,
-        "hot": true
+        "hot": true,
+        "trailer": "https://www.youtube.com/embed/bMYmqzLHUb0"
     },
     {
         "id": 4,
@@ -49,7 +52,8 @@
         "time": "120 minutes",
         "language": "Tiếng Nhật - Phụ đề Tiếng Việt",
         "display": false,
-        "hot": false
+        "hot": false,
+        "trailer": "https://www.youtube.com/embed/ATJYac_dORw"
     },
     {
         "id": 5,
@@ -62,6 +66,7 @@
         "time": "120 minutes",
         "language": "Tiếng Nhật - Phụ đề Tiếng Việt",
         "display": false,
-        "hot": false
+        "hot": false,
+        "trailer": "https://www.youtube.com/embed/4N6ozeZ2cA0"
     }
 ]

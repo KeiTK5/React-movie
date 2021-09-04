@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Form from '../containers/page/Form';
 import { useAuth } from '../context/AuthorProvider';
+import Search from './Search/Search';
 
 function Header() {
 
@@ -24,7 +25,7 @@ function Header() {
                         <a href="/anime">Anime</a>
                         <div className="nav-visible">
                             <div className="row width-row">
-                                <div className="col-3 col-md-4 col-sm-6 box-content">
+                                <div className="col-3 col-md-4 col-sm-12 box-content">
                                     <div className="box">
                                         <ul>
                                             <li><a href="/1/action">Hành động</a></li>
@@ -33,7 +34,7 @@ function Header() {
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="col-3 col-md-4 col-sm-6 box-content">
+                                <div className="col-3 col-md-4 col-sm-12 box-content">
                                     <div className="box">
                                         <ul>
                                             <li><a href="/1/horror">Kinh dị</a></li>
@@ -42,7 +43,7 @@ function Header() {
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="col-3 col-md-4 col-sm-6 box-content">
+                                <div className="col-3 col-md-4 col-sm-12 box-content">
                                     <div className="box">
                                         <ul>
                                             <li><a href="/1/music">Âm nhạc</a></li>
@@ -51,7 +52,7 @@ function Header() {
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="col-3 col-md-4 col-sm-6 box-content">
+                                <div className="col-3 col-md-4 col-sm-12 box-content">
                                     <div className="box">
                                         <ul>
                                             <li><a href="/1/life">Đời thường</a></li>
@@ -68,7 +69,7 @@ function Header() {
                         <a href="/anime">Movie</a>
                         <div className="nav-visible">
                             <div className="row width-row-second">
-                                <div className="col-4 col-md-6 col-sm-6 box-content">
+                                <div className="col-4 col-md-12 col-sm-12 box-content">
                                     <div className="box">
                                         <ul>
                                             <li><a href="/2/hot">Phim Hot</a></li>
@@ -77,7 +78,7 @@ function Header() {
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="col-4 col-md-6 col-sm-6 box-content">
+                                <div className="col-4 col-md-12 col-sm-12 box-content">
                                     <div className="box">
                                         <ul>
                                             <li><a href="/2/romance">Lãng mạn</a></li>
@@ -86,7 +87,7 @@ function Header() {
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="col-4 col-md-6 col-sm-6 box-content">
+                                <div className="col-4 col-md-12 col-sm-12 box-content">
                                     <div className="box">
                                         <ul>
                                             <li><a href="/2/horror">Kinh dị</a></li>
@@ -100,10 +101,7 @@ function Header() {
                     </li>
                     <li><a className="nav-hover" href="/rank">BXH</a></li>
                 </ul>
-                <div className="nav-search">
-                    <input type="text" className="search-input" placeholder="Search" />
-                    <span><i className='bx bx-search'></i></span>
-                </div>
+                <Search />
                 <div className="action">
                     {
                         user ?
@@ -149,6 +147,11 @@ function Header() {
                                     <div className="btn btn-login user" onClick={handleActive}>Đăng nhập</div>
                                 </>
                         }
+                    </div>
+                </div>
+                <div className="nav-mobile">
+                    <div className="nav-mobile-header">
+                        <i className='bx bx-menu'></i>
                     </div>
                 </div>
             </header>

@@ -1,12 +1,11 @@
-import React from 'react';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/themes/splide-default.min.css';
-
-import './banner.css'
-import banner from '../../assets/json/banner.json'
+import React, { useState } from 'react';
+import banner from '../../assets/json/banner.json';
+import './banner.css';
 
 function RenderImg(props) {
-    const { item } = props
+    const { item, isWatch } = props
     return (
         <div className="hero-slider" >
             <img src={item.image} alt="" />
@@ -32,7 +31,7 @@ function RenderImg(props) {
                     </div>
 
                     <div className="items-action top-down delay-6">
-                        <a href="/" className="btn btn-hover">
+                        <a href="#watch" className="btn btn-hover" onClick={isWatch}>
                             <i className="bx bxs-right-arrow"></i>
                             <span>Watch now</span>
                         </a>
@@ -44,6 +43,13 @@ function RenderImg(props) {
 }
 
 function Banner(props) {
+
+    const [watch, setWatch] = useState(false)
+
+    const isWatch = () => {
+        setWatch(!watch)
+    }
+
     return (
         <div className="banner wow fadeIn" id="hero-slide">
             <div className="hero-selection">
@@ -63,7 +69,7 @@ function Banner(props) {
                                 {
                                     banner.map((item, index) => (
                                         <SplideSlide key={index}>
-                                            <RenderImg item={item} />
+                                            <RenderImg item={item} isWatch={isWatch} watch={watch} />
                                         </SplideSlide>
                                     ))
                                 }
@@ -93,18 +99,20 @@ function Banner(props) {
                                     ))
                                 }
                             </Splide>
-                            {/* {
-                                banner.map((item, index) => (
-                                    item.display ?
-                                        <div className="hero-sub-image" key={index} >
-                                            <img src={item.image} alt="" />
-                                        </div> : ''
-                                ))
-                            } */}
                         </div>
+
                     </div>
                 </div>
             </div>
+            {
+                watch ?
+                    <div id="watch">
+                        <i className='bx bx-x' onClick={isWatch}></i>
+                        <iframe class="responsive-iframe" src="https://www.youtube.com/embed/ATJYac_dORw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    :
+                    null
+            }
         </div>
     );
 }

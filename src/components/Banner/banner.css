@@ -73,6 +73,10 @@
     justify-content: center;
 }
 
+.btn-hover > span {
+    margin-left: 7px;
+}
+
 .top-down {
     transform: translateY(-50px);
     visibility: hidden;
@@ -96,4 +100,30 @@
     transform: translateY(0);
     visibility: visible;
     opacity: 1;
+}
+
+#watch {
+    position: absolute;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+#watch > i {
+    position: fixed;
+    right: 15%;
+    cursor: pointer;
+    font-size: 30px;
+    z-index: 20;
+}
+
+.responsive-iframe {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
 }

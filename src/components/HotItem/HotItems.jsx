@@ -26,7 +26,6 @@ function HotItems(props) {
         fetch()
     }, [])
 
-    console.log(data);
 
 
     const option = {
