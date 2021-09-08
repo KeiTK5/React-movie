@@ -11,6 +11,10 @@ export const useAuth = () => {
 }
 
 function AuthorProvider({ children }) {
+    console.log('abcde');
+
+
+    
     // useState
     const [user, setUser] = useState()
 
