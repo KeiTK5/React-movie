@@ -4,6 +4,7 @@ function signout(props) {
     return (
         <div>
             askdjasdh
+            <img src="" alt="" />
         </div>
     );
 }
