@@ -2,7 +2,7 @@
   "name": "asm",
   "version": "0.1.0",
   "engines": {
-    "node": "18.x"
+    "node": "18.10.0"
   },
   "private": true,
   "dependencies": {
