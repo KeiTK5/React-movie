@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 import BoxItem from '../BoxItem/BoxItem';
 import './hot.css';
 
-import SkeMain from '../../skeleton/SkeMain';
 
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/themes/splide-default.min.css';
@@ -31,14 +30,22 @@ function HotItems(props) {
     const option = {
         type: 'loop',
         autoplay: true,
-        perPage: 5,
+        perPage: 6,
         width: '100%',
-        gap: '1rem',
+        gap: '32px',
         pagination: false,
         breakpoints: {
-            '1180': {
+            '1400': {
+                perPage: 5,
+                gap: '16px',
+            },
+            '1280': {
+                perPage: 5,
+                gap: '16px',
+            },
+            '1200': {
                 perPage: 4,
-                gap: '1rem',
+                gap: '16px',
             },
             '1000': {
                 perPage: 3,

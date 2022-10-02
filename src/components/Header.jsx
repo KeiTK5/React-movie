@@ -8,9 +8,14 @@ function Header() {
     const { user, logout } = useAuth()
 
     const [active, setActive] = useState(false)
+    const [open, setOpen] = useState(false)
 
     const handleActive = () => {
         setActive(!active)
+    }
+
+    const openNav = () => {
+        setOpen(!open)
     }
 
     return (
@@ -150,8 +155,49 @@ function Header() {
                     </div>
                 </div>
                 <div className="nav-mobile">
-                    <div className="nav-mobile-header">
+                    <div className="nav-mobile-header" onClick={openNav}>
                         <i className='bx bx-menu'></i>
+                    </div>
+                    <div className="hamburger-nav">
+                        <div className={`dropdown-nav ${open ? "open" : null}`}>
+                            <div className="row width-row">
+                                <div className="col-3 col-md-4 col-sm-12 box-content">
+                                    <div className="box">
+                                        <ul>
+                                            <li><a href="/1/action">Hành động</a></li>
+                                            <li><a href="/1/fiction">Viễn tưởng</a></li>
+                                            <li><a href="/1/romance">Lãng mạn</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div className="col-3 col-md-4 col-sm-12 box-content">
+                                    <div className="box">
+                                        <ul>
+                                            <li><a href="/1/horror">Kinh dị</a></li>
+                                            <li><a href="/1/comedy">Hài hước</a></li>
+                                            <li><a href="/1/school">Trường học</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div className="col-3 col-md-4 col-sm-12 box-content">
+                                    <div className="box">
+                                        <ul>
+                                            <li><a href="/1/music">Âm nhạc</a></li>
+                                            <li><a href="/1/adventure">Phiêu lưu</a></li>
+                                            <li><a href="/1/supernatural">Siêu nhiên</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div className="col-3 col-md-4 col-sm-12 box-content">
+                                    <div className="box">
+                                        <ul>
+                                            <li className='item-nav'><i className='bx bx-user icon-user'></i><a href="">Đăng nhập</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </header>

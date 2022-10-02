@@ -1,8 +1,6 @@
 .item-coming {
     position: relative;
     height: 100%;
-    width: 75%;
-    margin: 0 auto;
     overflow: hidden;
     cursor: pointer;
 }
@@ -12,6 +10,7 @@
     height: 100%;
     width: 100%;
     transition: 0.3s ease-in-out;
+    object-fit: fill;
 }
 
 .item-coming:hover > img {

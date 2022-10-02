@@ -48,17 +48,21 @@ function Cartoon(props) {
     const option = {
         type: 'loop',
         autoplay: true,
-        gap: '1rem',
-        perPage: 5,
+        gap: '32px',
+        perPage: 6,
         pagination: false,
         breakpoints: {
+            '1400': {
+                perPage: 5,
+                gap: '16px',
+            },
             '1280': {
                 perPage: 5,
-                gap: '1rem',
+                gap: '16px',
             },
-            '1180': {
+            '1200': {
                 perPage: 4,
-                gap: '1rem',
+                gap: '16px',
             },
             '1000': {
                 perPage: 3,
@@ -94,7 +98,7 @@ function Cartoon(props) {
         <section className="wow fadeIn">
             <div className="container">
                 <h3 className="title">{props.title}</h3>
-                <Splide options={option}>
+                <Splide options={option} className='slider-box'>
                     {
                         data.map((item, index) => (
                             <SplideSlide key={index} >

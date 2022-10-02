@@ -1,3 +1,8 @@
+@media only screen and (max-width: 1080px) {
+    .banner{
+        display: none;
+    }
+}
 .hero-selection {
     padding: 0 20px;
 }

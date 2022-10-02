@@ -1,14 +1,11 @@
 import axios from "axios";
 import React, { useEffect, useState } from 'react';
-import SkeletenRank from "../../skeleton/SkeletenRank";
-import Skeleton from '../../skeleton/Skeleton';
-
 import './bxh.css';
 
 function ComingSoon(props) {
     const { item } = props
     return (
-        <div className="col-4 col-md-4 col-sm-6 blog-mg mg-top">
+        <div className="col-3 col-md-4 col-sm-6 blog-mg mg-top">
             <div className="item-coming">
                 <img src={item.image} alt="" />
                 <span className="premiere">
@@ -79,22 +76,19 @@ function Bxh(props) {
                         <h3 className="title">{props.title}</h3>
                         <div className="row">
                             {
-                                loading ? [1, 2, 3, 4, 5, 6].map(item => <Skeleton key={item} />) :
-                                    coming && coming.map(item => (
-                                        <ComingSoon item={item} key={item.id} />
-                                    ))
+                                coming.map(item => (
+                                    <ComingSoon item={item} key={item.id} />
+                                ))
                             }
-
                         </div>
                     </div>
                     <div className="col-3 col-md-12">
                         <h3 className="title">{props.title2}</h3>
                         <div className="rank mg-top">
                             {
-                                loading ? [1, 2, 3, 4, 5, 6, 7].map(item => <SkeletenRank key={item} />) :
-                                    bxh.map(item => (
-                                        <Rank item={item} key={item.id} />
-                                    ))
+                                bxh.map(item => (
+                                    <Rank item={item} key={item.id} />
+                                ))
                             }
                         </div>
                     </div>
