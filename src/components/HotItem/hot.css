@@ -73,13 +73,13 @@ i {
 
 .item-content-infos {
     display: flex;
-    justify-content: space-evenly;
 }
 
 .movie-info {
     display: flex;
     align-items: center;
     font-size: 15px;
+    margin-right: 16px;
 }
 
 .item-content-action {

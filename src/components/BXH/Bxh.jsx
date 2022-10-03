@@ -53,9 +53,9 @@ function Bxh(props) {
         setTimeout(async () => {
             const url = 'https://json-server-anime.herokuapp.com/categories/1/animes?_sort=view&_order=desc'
             const res = await axios(url)
-            setBxh(res.data.slice(0, 7))
+            setBxh(res.data.slice(0, 10))
             setLoading(false)
-        }, 3500);
+        }, 1000);
     }, [])
 
     useEffect(() => {
@@ -65,7 +65,7 @@ function Bxh(props) {
             const res = await axios(url)
             setComing(res.data)
             setLoading(false)
-        }, 3500);
+        }, 1000);
     }, [])
 
     return (

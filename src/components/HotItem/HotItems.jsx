@@ -70,17 +70,15 @@ function HotItems(props) {
         <section>
             <div className="container">
                 <h3 className="title">{props.title}</h3>
-                <div className="hot-items-wrapper">
-                    <Splide options={option}>
-                        {
-                            data.map((item, index) => (
-                                <SplideSlide key={index} >
-                                    <BoxItem item={item} clickBuy={clickBuy} />
-                                </SplideSlide>
-                            ))
-                        }
-                    </Splide>
-                </div>
+                <Splide options={option}>
+                    {
+                        data.map((item, index) => (
+                            <SplideSlide key={index} >
+                                <BoxItem item={item} clickBuy={clickBuy} />
+                            </SplideSlide>
+                        ))
+                    }
+                </Splide>
             </div>
         </section>
     );

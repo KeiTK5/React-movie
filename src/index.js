@@ -4,7 +4,6 @@ import HomeContainer from './containers/Home';
 import './assets/css/index.css';
 import './assets/css/grid.css';
 
-
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
