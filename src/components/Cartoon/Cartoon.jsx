@@ -1,7 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { Splide, SplideSlide } from '@splidejs/react-splide';
-import '@splidejs/splide/dist/css/themes/splide-default.min.css';
+import Slider from "react-slick";
 
 function Render(props) {
     const { item, clickBuy } = props
@@ -45,42 +44,77 @@ function Cartoon(props) {
     const { clickBuy } = props
     const [data, setData] = useState([])
 
-    const option = {
+    const settings = {
         type: 'loop',
         autoplay: true,
-        gap: '32px',
-        perPage: 6,
+        rewind: true,
+        slidesToShow: 6,
         pagination: false,
-        breakpoints: {
-            '1400': {
-                perPage: 5,
-                gap: '16px',
+        responsive: [
+            {
+                breakpoint: 1400,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
             },
-            '1280': {
-                perPage: 5,
-                gap: '16px',
+            {
+                breakpoint: 1280,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
             },
-            '1200': {
-                perPage: 4,
-                gap: '16px',
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
             },
-            '1000': {
-                perPage: 3,
-                gap: '1rem',
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
             },
-            '800': {
-                perPage: 2,
-                gap: '1rem',
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
             },
-            '640': {
-                perPage: 2,
-                gap: '1rem',
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
             },
-            '480': {
-                perPage: 1,
-                gap: '1rem',
-            }
-        }
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+        ]
     }
 
     useEffect(() => {
@@ -98,15 +132,13 @@ function Cartoon(props) {
         <section className="wow fadeIn">
             <div className="container">
                 <h3 className="title">{props.title}</h3>
-                <Splide options={option} className='slider-box'>
+                <Slider {...settings} className='slider-box'>
                     {
                         data.map((item, index) => (
-                            <SplideSlide key={index} >
-                                <Render item={item} clickBuy={clickBuy} />
-                            </SplideSlide>
+                            <Render item={item} clickBuy={clickBuy} />
                         ))
                     }
-                </Splide>
+                </Slider>
             </div>
         </section>
     );

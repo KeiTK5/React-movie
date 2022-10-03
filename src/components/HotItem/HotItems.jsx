@@ -2,10 +2,8 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import BoxItem from '../BoxItem/BoxItem';
 import './hot.css';
+import Slider from "react-slick";
 
-
-import { Splide, SplideSlide } from '@splidejs/react-splide';
-import '@splidejs/splide/dist/css/themes/splide-default.min.css';
 
 
 function HotItems(props) {
@@ -27,58 +25,91 @@ function HotItems(props) {
 
 
 
-    const option = {
+    const settings = {
         type: 'loop',
         autoplay: true,
-        perPage: 6,
+        rewind: true,
+        slidesToShow: 6,
         width: '100%',
-        gap: '32px',
         pagination: false,
-        breakpoints: {
-            '1400': {
-                perPage: 5,
-                gap: '16px',
+        responsive: [
+            {
+                breakpoint: 1400,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
             },
-            '1280': {
-                perPage: 5,
-                gap: '16px',
+            {
+                breakpoint: 1280,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
             },
-            '1200': {
-                perPage: 4,
-                gap: '16px',
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
             },
-            '1000': {
-                perPage: 3,
-                gap: '1rem',
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
             },
-            '800': {
-                perPage: 2,
-                gap: '1rem',
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
             },
-            '640': {
-                perPage: 2,
-                gap: '1rem',
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
             },
-            '480': {
-                perPage: 1,
-                gap: '1rem',
-            }
-        }
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+        ]
     }
 
     return (
         <section>
             <div className="container">
                 <h3 className="title">{props.title}</h3>
-                <Splide options={option}>
+                <Slider {...settings}>
                     {
                         data.map((item, index) => (
-                            <SplideSlide key={index} >
-                                <BoxItem item={item} clickBuy={clickBuy} />
-                            </SplideSlide>
+                            <BoxItem item={item} clickBuy={clickBuy} />
                         ))
                     }
-                </Splide>
+                </Slider >
             </div>
         </section>
     );

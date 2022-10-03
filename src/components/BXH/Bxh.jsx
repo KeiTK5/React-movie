@@ -82,7 +82,7 @@ function Bxh(props) {
                             }
                         </div>
                     </div>
-                    <div className="col-3 col-md-12">
+                    <div className="col-3 col-md-12 rank">
                         <h3 className="title">{props.title2}</h3>
                         <div className="rank mg-top">
                             {

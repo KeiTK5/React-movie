@@ -141,5 +141,14 @@ img:hover{
     right: 110px;
 }
 
+@media only screen and (max-width: 1280px) {
+    .rank {
+        margin-top: 40px;
+    }
+    .footer-title{
+        margin-top: 24px;
+    }
+}
+
 
 

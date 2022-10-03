@@ -6,7 +6,6 @@
   },
   "private": true,
   "dependencies": {
-    "@splidejs/react-splide": "^0.7.12",
     "@splidejs/splide-extension-video": "^0.4.6",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",

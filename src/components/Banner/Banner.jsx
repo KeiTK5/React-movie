@@ -1,5 +1,4 @@
-import { Splide, SplideSlide } from '@splidejs/react-splide';
-import '@splidejs/splide/dist/css/themes/splide-default.min.css';
+import Slider from "react-slick";
 import React, { useState } from 'react';
 import banner from '../../assets/json/banner.json';
 import './banner.css';
@@ -50,30 +49,29 @@ function Banner(props) {
         setWatch(!watch)
     }
 
+    const settings = {
+        fade: true,
+        rewind: true,
+        autoplay: true,
+        pagination: false,
+        arrows: false,
+        rewindSpeed: 1000,
+        speed: 1000
+    }
     return (
         <div className="banner wow fadeIn" id="hero-slide">
             <div className="hero-selection">
                 <div className="row" >
                     <div className="col-12 col-md-12">
-                        <div className="hero-main owl-carousel" id="hero-selection">
-                            <Splide options={{
-                                type: 'fade',
-                                rewind: true,
-                                autoplay: true,
-                                pagination: false,
-                                arrows: false,
-                                rewindSpeed: 1000,
-                                speed: 1000
-                            }}
+                        <div className="hero-main" id="hero-selection">
+                            <Slider {...settings}
                             >
                                 {
                                     banner.map((item, index) => (
-                                        <SplideSlide key={index}>
-                                            <RenderImg item={item} isWatch={isWatch} watch={watch} />
-                                        </SplideSlide>
+                                        <RenderImg item={item} isWatch={isWatch} watch={watch} />
                                     ))
                                 }
-                            </Splide>
+                            </Slider>
                         </div>
                     </div>
                 </div>
