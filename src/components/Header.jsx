@@ -104,7 +104,7 @@ function Header() {
                             </div>
                         </div>
                     </li>
-                    <li><Link className="nav-hover" href="/rank">BXH</Link></li>
+                    <li><Link to="/rank" className="nav-hover" >BXH</Link></li>
                 </ul>
                 <Search />
                 <div className="action">

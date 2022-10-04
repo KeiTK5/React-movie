@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import SkeType from '../../../skeleton/SkeType';
 import './type.css'
+import { Link } from 'react-router-dom';
 
 
 const Render = (props) => {
@@ -14,7 +15,7 @@ const Render = (props) => {
                     <i className='bx bx-play-circle'></i>
                     <span className="time"></span>
                 </div>
-                <a href={`/detail/${item.categoryId}/${item.name}/${item.id}`} className="video-content">{item.name}</a>
+                <Link to={`/detail/${item.categoryId}/${item.name}/${item.id}`} className="video-content">{item.name}</Link>
             </div>
         </div>
     )
