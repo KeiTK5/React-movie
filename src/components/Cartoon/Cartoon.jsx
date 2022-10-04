@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import Slider from "react-slick";
-
+import { Link } from 'react-router-dom';
 function Render(props) {
     const { item, clickBuy } = props
     const [like, setLike] = useState(false)
@@ -16,9 +16,9 @@ function Render(props) {
             <img src={item.image}
                 alt="" />
             <div className="movie-items-content">
-                <a href={`/detail/${item.categoryId}/${item.name}/${item.id}`} className="movie-items-title">
+                <Link to={`/detail/${item.categoryId}/${item.name}/${item.id}`} className="movie-items-title">
                     {item.name}
-                </a>
+                </Link>
                 <div className="item-content-action">
                     <div className="item-content-like movie-info" onClick={liked}>
                         {

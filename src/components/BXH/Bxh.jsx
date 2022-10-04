@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from 'react';
 import './bxh.css';
-
+import { Link } from 'react-router-dom'
 function ComingSoon(props) {
     const { item } = props
     return (
@@ -11,9 +11,9 @@ function ComingSoon(props) {
                 <span className="premiere">
                     {item.premiere}
                 </span>
-                <a href={`/detail/${item.categoryId}/${item.name}/${item.id}`} className="name-coming">
+                <Link to={`/detail/${item.categoryId}/${item.name}/${item.id}`} className="name-coming">
                     {item.name}
-                </a>
+                </Link>
             </div>
         </div>
     )
@@ -28,7 +28,7 @@ function Rank({ item }) {
                         <img src={item.image} alt="" />
                     </div>
                     <div className="content-rank">
-                        <a href={`/detail/${item.categoryId}/${item.name}/${item.id}`} className="name-rank">{item.name}</a>
+                        <Link to={`/detail/${item.categoryId}/${item.name}/${item.id}`} className="name-rank">{item.name}</Link>
                         <span className="view-rank"></span>
                     </div>
                     <div className="number-rank">

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom'; 
 const arr = []
 function BoxItem(props) {
     const { item, clickBuy } = props
@@ -15,9 +16,9 @@ function BoxItem(props) {
             <img src={item.image}
                 alt="" />
             <div className="movie-items-content">
-                <a href={`./detail/${item.categoryId}/${item.name}/${item.id}`} className="movie-items-title">
+                <Link to={`./detail/${item.categoryId}/${item.name}/${item.id}`} className="movie-items-title">
                     {item.name}
-                </a>
+                </Link>
                 <div className="item-content-action">
                     <div className="item-content-like movie-info" onClick={liked}>
                         {
