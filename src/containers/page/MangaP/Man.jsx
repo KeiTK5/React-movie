@@ -25,7 +25,7 @@ function Man({ match, props }) {
     useEffect(() => {
         setLoading(true)
         setTimeout(async () => {
-            const url = `https://json-server-anime.herokuapp.com/categories/5/animes`
+            const url = `https://tender-overshirt-colt.cyclic.app/categories/5/animes`;
             const res = await axios(url)
             setData(res.data)
             setLoading(false)

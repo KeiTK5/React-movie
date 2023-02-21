@@ -27,7 +27,7 @@ function BXH({ match, props }) {
     useEffect(() => {
         setLoading(true)
         setTimeout(async () => {
-            const url = `https://json-server-anime.herokuapp.com/animes?_sort=view&_order=desc`
+            const url = `https://tender-overshirt-colt.cyclic.app/animes?_sort=view&_order=desc`;
             const res = await axios(url)
             setData(res.data)
             setLoading(false)

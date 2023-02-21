@@ -33,7 +33,7 @@ function Type({ match, props }) {
     useEffect(() => {
         setLoading(true)
         setTimeout(async () => {
-            const url = `https://json-server-anime.herokuapp.com/categories/${path}/animes?type=${type}`
+            const url = `https://tender-overshirt-colt.cyclic.app/categories/${path}/animes?type=${type}`;
             const res = await axios(url)
             setData(res.data)
             setLoading(false)

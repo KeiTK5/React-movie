@@ -15,7 +15,7 @@ function HotItems(props) {
 
 
     useEffect(() => {
-        const url = 'https://json-server-anime.herokuapp.com/categories/2/animes'
+        const url = "https://tender-overshirt-colt.cyclic.app/categories/2/animes";
         const fetch = async () => {
             const res = await axios(url)
             setData(res.data.sort((a, b) => 0.5 - Math.random()).slice(0, 10))

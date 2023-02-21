@@ -64,12 +64,12 @@ function Cart({ match, props }) {
     const [cart, setCart] = useState([])
 
     const handleDelete = async (id) => {
-        const url = `https://json-server-anime.herokuapp.com/order/${id}`
+        const url = `https://tender-overshirt-colt.cyclic.app/order/${id}`
         await axios.delete(url)
     }
 
     useEffect(() => {
-        const url = 'https://json-server-anime.herokuapp.com/order'
+        const url = 'https://tender-overshirt-colt.cyclic.app/order'
         const fetch = async () => {
             const res = await axios(url)
             setCart(res.data)

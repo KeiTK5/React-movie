@@ -9,7 +9,7 @@ const Dropdown = ({ search }) => {
     useEffect(() => {
         if (search) {
             const fetch = async () => {
-                const url = `https://json-server-anime.herokuapp.com/animes?name_like=${search}`
+                const url = `https://tender-overshirt-colt.cyclic.app/animes?name_like=${search}`;
                 const res = await axios(url)
                 setData(res.data.slice(0, 6))
                 console.log(url);

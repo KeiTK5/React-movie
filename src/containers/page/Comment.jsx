@@ -7,7 +7,7 @@ function Comment({ match, props }) {
 
     useEffect(() => {
         const fetch = async () => {
-            const comment = `https://json-server-anime.herokuapp.com/comment`
+            const comment = `https://tender-overshirt-colt.cyclic.app/comment`
             const res = await axios(comment)
             setCmt(res.data.reverse())
         }
@@ -15,7 +15,7 @@ function Comment({ match, props }) {
     }, [cmt])
 
     const submitCmt = async (data) => {
-        const urlCmt = `https://json-server-anime.herokuapp.com/comment`
+        const urlCmt = `https://tender-overshirt-colt.cyclic.app/comment`
 
         const obj = {
             id: Math.floor(Math.random() * 1000),

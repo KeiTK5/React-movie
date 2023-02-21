@@ -20,7 +20,7 @@ function RenderManga(props) {
 function Manga(props) {
     const [data, setData] = useState([])
     useEffect(() => {
-        const url = 'https://json-server-anime.herokuapp.com/categories/5/animes'
+        const url = "https://tender-overshirt-colt.cyclic.app/categories/5/animes";
         const fetch = async () => {
             const res = await axios(url)
             setData(res.data)

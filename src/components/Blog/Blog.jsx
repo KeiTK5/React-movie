@@ -23,7 +23,7 @@ function RenderBlog(props) {
 function Blog(props) {
     const [data, setData] = useState([])
     useEffect(() => {
-        const url = 'https://json-server-anime.herokuapp.com/categories/6/animes'
+        const url = "https://tender-overshirt-colt.cyclic.app/categories/6/animes";
         const fetch = async () => {
             const res = await axios(url)
             setData(res.data)

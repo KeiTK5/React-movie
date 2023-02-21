@@ -41,7 +41,7 @@ function Home() {
     const clickBuy = async (item, quantity) => {
         console.log(item);
         alert('Added to your ticket !')
-        const url = 'https://json-server-anime.herokuapp.com/order'
+        const url = "https://tender-overshirt-colt.cyclic.app/order";
         const obj = {
             user: user.email,
             name: item.name,
